@@ -102,8 +102,9 @@ function validateLogin() {
         input.focus();
         
         // Removemos la clase shake después de que termine la animación para poder repetirla
+        // Agregalo al final de buildInterface() o en un setTimeout
         setTimeout(() => {
-            box.classList.remove('shake');
+            map.invalidateSize();
         }, 400);
     }
 }
