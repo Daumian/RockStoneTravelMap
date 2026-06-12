@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Stone Travels | Mendoza Premium Experience</title>
+    
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <section class="hero-section">
+        <h1>Rock <span>Stone</span> Travels</h1>
+        <p>Descubre Mendoza a través de una curaduría exclusiva de experiencias premium. Diseña tu propio itinerario interactivo y explora lo mejor de la capital del vino.</p>
+        <a href="#map-experience" class="cta-btn" id="startBtn">Explorar Mapa</a>
+    </section>
+
+    <div class="app-container" id="map-experience">
+        
+        <aside class="sidebar-left">
+            <div class="sidebar-header">
+                <div class="lang-picker">
+                    <select id="langSelect" onchange="changeLanguage()">
+                        <option value="es">Español</option>
+                        <option value="en">English</option>
+                        <option value="pt">Português</option>
+                    </select>
+                </div>
+                <div class="search-wrapper" style="margin-top: 15px;">
+                    <input type="text" id="menuSearch" placeholder="Buscar lugar..." oninput="filterPlaces()" 
+                           style="width: 100%; padding: 10px; border-radius: 4px; border: 1px solid #444; background: #262626; color: #fff; font-size: 13px;">
+                </div>
+            </div>
+            <div class="categories-wrapper" id="categoriesContainer"></div>
+        </aside>
+
+        <main id="map"></main>
+
+        <aside class="sidebar-right">
+            <div class="itinerary-title" id="itineraryTitle">📋 Cosas por hacer</div>
+            <ul class="itinerary-list" id="itineraryList"></ul>
+            
+            <div class="itinerary-footer">
+                <a href="https://wa.me/549xxxxxxxxxx?text=Hola,%20quiero%20solicitar%20un%20presupuesto%20para%20mi%20viaje" 
+                   target="_blank" class="budget-btn">
+                   Solicitar Presupuesto
+                </a>
+            </div>
+        </aside>
+
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    
+    <script src="app.js"></script>
+</body>
+</html>
