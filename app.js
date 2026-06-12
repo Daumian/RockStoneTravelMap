@@ -81,6 +81,57 @@ function loadData() {
         });
 }
 
+
+function validateLogin() {
+    const input = document.getElementById('passInput');
+    const overlay = document.getElementById('login-overlay');
+    const box = document.getElementById('loginBox');
+    const error = document.getElementById('errorMsg');
+    
+    // Validamos pasando todo a minúsculas
+    if (input.value.toLowerCase().trim() === 'rockstonemdz'.toLowerCase()) {
+        // Login correcto: ocultamos el overlay
+        overlay.classList.add('hidden');
+    } else {
+        // Login incorrecto: mostramos error y sacudimos la caja
+        error.style.display = 'block';
+        box.classList.add('shake');
+        
+        // Limpiamos el input para que vuelva a intentar
+        input.value = '';
+        input.focus();
+        
+        // Removemos la clase shake después de que termine la animación para poder repetirla
+        setTimeout(() => {
+            box.classList.remove('shake');
+        }, 400);
+    }
+}
+
+function togglePasswordVisibility() {
+    const input = document.getElementById('passInput');
+    const btn = document.getElementById('togglePassBtn');
+    
+    if (input.type === 'password') {
+        input.type = 'text';
+        btn.innerText = '🙈'; // Cambia el ícono para indicar que se puede ocultar
+    } else {
+        input.type = 'password';
+        btn.innerText = '👁️'; // Cambia el ícono para indicar que se puede ver
+    }
+    
+    // Devolvemos el foco al input para que el usuario pueda seguir escribiendo de una
+    input.focus();
+}
+
+
+function checkEnter(event) {
+    if (event.key === 'Enter') {
+        validateLogin();
+    }
+}
+
+
 function buildInterface() {
     document.getElementById('itineraryTitle').innerText = uiLabels.itineraryTitle[currentLang];
     document.getElementById('startBtn').innerText = uiLabels.startBtn[currentLang];

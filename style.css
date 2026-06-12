@@ -130,3 +130,141 @@ body, html { height: 100%; scroll-behavior: smooth; background-color: #f4f6f9; }
     background: #d69e2e;
     color: #1a1a1a;
 }
+
+/* ==========================================
+   PANTALLA DE LOGIN / OVERLAY
+   ========================================== */
+.login-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.95)), 
+                url('img/ux/fondo.jpg') no-repeat center center/cover;
+    z-index: 9999; /* Asegura que tape el mapa y los sidebars */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+/* Clase para ocultar el login con suavidad */
+.login-overlay.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.login-box {
+    background: #1a1a1a;
+    padding: 40px;
+    border: 2px solid #d69e2e;
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+}
+
+.login-box h2 {
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.login-box h2 span { color: #d69e2e; }
+
+.login-box p {
+    color: #e2e8f0;
+    font-size: 14px;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 4px;
+    border: 1px solid #444;
+    background: #262626;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.login-box input:focus {
+    outline: none;
+    border-color: #d69e2e;
+}
+
+.login-box button {
+    width: 100%;
+    background: #d69e2e;
+    color: #000;
+    border: none;
+    padding: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.login-box button:hover {
+    background: #fff;
+}
+
+.error-msg {
+    color: #b91c1c;
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 15px;
+    display: none;
+}
+
+/* EFECTO DE SACUDIDA (SHAKE) */
+.shake {
+    animation: shakeAnim 0.4s ease-in-out;
+}
+
+@keyframes shakeAnim {
+    0%, 100% { transform: translateX(0); }
+    20%, 60% { transform: translateX(-10px); }
+    40%, 80% { transform: translateX(10px); }
+}
+
+
+/* Contenedor relativo para poder posicionar el botón de forma absoluta */
+.password-wrapper {
+    position: relative;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* El input ahora no lleva el margin-bottom porque lo tiene el wrapper */
+.login-box .password-wrapper input {
+    margin-bottom: 0;
+    padding-right: 45px; /* Espacio extra a la derecha para que el texto no tapar el ojo */
+}
+
+/* Estilo para el botón del ojito */
+.toggle-pass-btn {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none !important; /* Quita el fondo dorado heredado */
+    border: none !important;
+    color: #888 !important;
+    font-size: 18px;
+    width: auto !important;
+    padding: 5px !important;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.toggle-pass-btn:hover {
+    color: #d69e2e !important; /* Se pone dorado al pasar el mouse */
+}

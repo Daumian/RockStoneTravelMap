@@ -11,6 +11,23 @@
 </head>
 <body>
 
+    <div id="login-overlay" class="login-overlay">
+        <div class="login-box" id="loginBox">
+            <h2>Rock <span>Stone</span> Travels</h2>
+            <p>Ingresa tu código de acceso exclusivo:</p>
+            <div class="password-wrapper">
+                <input type="password" id="passInput" placeholder="Código de acceso..." onkeydown="checkEnter(event)">
+                <button type="button" id="togglePassBtn" class="toggle-pass-btn" onclick="togglePasswordVisibility()">👁️</button>
+            </div>
+            <button onclick="validateLogin()">Ingresar</button>
+            <div id="errorMsg" class="error-msg">Código incorrecto. Inténtalo de nuevo.</div>
+        </div>
+    </div>
+
+
+
+
+
     <section class="hero-section">
         <h1>Rock <span>Stone</span> Travels</h1>
         <p>Descubre Mendoza a través de una curaduría exclusiva de experiencias premium. Diseña tu propio itinerario interactivo y explora lo mejor de la capital del vino.</p>
