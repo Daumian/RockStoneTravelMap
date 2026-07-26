@@ -1,275 +1,1976 @@
 {
-  "mapa_mendoza": {
-    "puntos_de_interes": [
-      { "nombre": "Plaza Italia", "latitud": "-32.8923", "longitud": "-68.8480", "descripcion": "" },
-      { "nombre": "Plaza España", "latitud": "-32.8926", "longitud": "-68.8388", "descripcion": "" },
-      { "nombre": "Plaza Chile", "latitud": "-32.8850", "longitud": "-68.8466", "descripcion": "" },
-      { "nombre": "Plaza San Martín", "latitud": "-32.8855", "longitud": "-68.8383", "descripcion": "" },
-      { "nombre": "Plaza Independencia", "latitud": "-32.8888", "longitud": "-68.8431", "descripcion": "" },
-      { "nombre": "Peatonal Sarmiento", "latitud": "-32.8894", "longitud": "-68.8394", "descripcion": "" },
-      { "nombre": "Área Fundacional", "latitud": "-32.8802", "longitud": "-68.8258", "descripcion": "" },
-      { "nombre": "Ruinas Jesuíticas", "latitud": "-32.8817", "longitud": "-68.8286", "descripcion": "" },
-      { "nombre": "Casa de Gobierno", "latitud": "-32.8993", "longitud": "-68.8435", "descripcion": "" },
-      { "nombre": "Poder Judicial", "latitud": "-32.8974", "longitud": "-68.8427", "descripcion": "" },
-      { "nombre": "Poder Legislativo", "latitud": "-32.8885", "longitud": "-68.8415", "descripcion": "" },
-      { "nombre": "Poder Ejecutivo", "latitud": "-32.8993", "longitud": "-68.8435", "descripcion": "" },
-      { "nombre": "Parque Cívico", "latitud": "-32.8980", "longitud": "-68.8425", "descripcion": "" },
-      { "nombre": "Enoteca (museo del vino)", "latitud": "-32.8990", "longitud": "-68.8450", "descripcion": "" },
-      { "nombre": "Avenida Arístides Villanueva", "latitud": "-32.8930", "longitud": "-68.8540", "descripcion": "" },
-      { "nombre": "Calle Emilio Civit", "latitud": "-32.8906", "longitud": "-68.8525", "descripcion": "" },
-      { "nombre": "Parque General San Martín - Portones del Parque", "latitud": "-32.8884", "longitud": "-68.8617", "descripcion": "" },
-      { "nombre": "Parque General San Martín - Rotonda Caballitos de Marly", "latitud": "-32.8879", "longitud": "-68.8631", "descripcion": "" },
-      { "nombre": "Parque General San Martín - Fuente de los Continentes", "latitud": "-32.8913", "longitud": "-68.8687", "descripcion": "" },
-      { "nombre": "Parque General San Martín - Lago", "latitud": "-32.8925", "longitud": "-68.8669", "descripcion": "" },
-      { "nombre": "Parque General San Martín - Estadio Islas Malvinas", "latitud": "-32.8896", "longitud": "-68.8803", "descripcion": "" },
-      { "nombre": "Parque General San Martín - Cerro de la Gloria", "latitud": "-32.8889", "longitud": "-68.8953", "descripcion": "" },
-      { "nombre": "Parque General San Martín - Anfiteatro Frank Romero Day", "latitud": "-32.8928", "longitud": "-68.8860", "descripcion": "" }
-    ],
-    "museos": [
-      { "nombre": "Museo Carlos Alonso", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Museo del Área Fundacional", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Tren de la Cultura", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Aristóbula", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Museo Municipal de Arte Moderno de Mendoza MMAMM", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Museo Pasado Cuyano", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Espacio Contemporáneo de Arte Eliana Molinelli", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Museo Histórico General San Martín", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Museo de Ciencias Naturales y Antropológicas Juan Cornelio Moyano", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Archivo Histórico de Mendoza", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Pinacoteca Sanmartiniana", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Casa de San Martín", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Espacio Fotográfico Máximo Arias", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Memorial a la Bandera", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Mercado Central", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Mercado Artesanal Mendocino", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Terraza Jardín Mirador", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Casa Museo Molina Pico", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Basílica de San Francisco", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Campo Histórico El Plumerillo", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Castillo de Las Heras", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Museo Nacional del Vino y la Vendimia", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Casa Fader", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Museo Ferroviario de Godoy Cruz", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Museo Scout", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "MIA", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Museo Histórico Municipal Las Bóvedas", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Julio César Lara", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Museo Histórico y Natural Lavalle", "latitud": "", "longitud": "", "descripcion": "" }
-    ],
-    "hoteles_centro": [
-      { "nombre": "Hotel Hyatt", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Hotel Sheraton", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Hotel Diplomatic", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Hotel Hilton", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Hotel Amerian Executive", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Hotel Raíces Aconcagua", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Hotel Portal Plaza Suites", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Hotel Argentino", "latitud": "", "longitud": "", "descripcion": "" }
-    ],
-    "restaurantes": [
-      { "nombre": "Soberana", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Centauro", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Carolino Cocina", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Anna Bistro", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Torito", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Chama Santuario", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Praga", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Mar y Monte", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Republica", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Magnolia", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Fuente y Fonda", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Pez Globo", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "La Lucia", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Ceibo", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Cocina Gardenia", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "La Cabrera", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Francesco", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "SushiClub", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Sancho", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "La Bodeguita", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Abrasado", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Club de Campo Cantina", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Bosco", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "1884", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Tucson", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Alcázar de la Cruz", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Caléndula", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "El Mercadito", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Brutal alta cocina", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Auténtico", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "El Faro", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "La vida", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Bistro M", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Assemblage", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Criolla", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Rincón del Malbec", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Michelini i Mufatto", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Cavas Don Guillermo Cano", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Andeluna", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Casa Agostino", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Enlace Resto", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Quimera Bistro", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "5 Suelos", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "La Huella", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Cundo Altamira", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Terraza Ruda Cocina", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Rope", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Espacio Trapiche", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "7 Fuegos", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Mirador Restaurante", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Rastro", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Las Jarillas", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Osadía de Crear", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Martino Wines", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Isidris", "latitud": "", "longitud": "", "descripcion": "" }
-    ],
-    "restaurantes_estrella_michelin": [
-      { "nombre": "Casa Vigil", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Zonda", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Azafrán", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Brindillas", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Riccitelli", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Angélica", "latitud": "", "longitud": "", "descripcion": "" }
-    ],
-    "tiendas": [
-      { "nombre": "Entre 2 (Locales Centro)", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Entre 2 (Fábrica Potrerillos)", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Brillat Savarin", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Gouher", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Chocolezza (Locales Centro)", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "La Cabaña (Fábrica de Chocolates)", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Cueros Armando", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Vauren", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "La Estancia 1980", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Fiorentino", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Alain de France", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Umbral Marroquinería", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Hi Travellers", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Wine Up", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Malbec", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Fans del vino", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Sol y vino", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Tradición Vinos", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Portal del viento", "latitud": "", "longitud": "", "descripcion": "" }
-    ],
-    "tour_alta_montana": [
-      { "nombre": "Cacheuta", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Potrerillos", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Uspallata", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Penitentes", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Puente del Inca", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Cerro Aconcagua", "latitud": "", "longitud": "", "descripcion": "" }
-    ],
-    "bodegas_lujan": [
-      { "nombre": "Pulenta", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Mendel", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Ver sacrum", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Caelum", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Alta vista", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Matervini", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Septima", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Achaval Ferrer", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Krontiras", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Chandon", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Catena Zapata", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Quimera", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Norton", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Clos de Chacras", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Tierras Altas", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Hacienda del Plata", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Viamonte", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Artesanal L' orange", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Benegas", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Nieto Senetiner", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Roberto Bonfanti", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Luigi Bosca", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Renacer", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Lagarde", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Ruca Malen", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Vistalba", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Anaia", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Cruzat", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Belasco Baquedano", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Alpamanta", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Budeguer", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Lamadrid", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Amalia", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Finca Decero", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Casa Chacras", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Durigutti", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Susana Balbo", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Kaiken", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Penedo Borges", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Finca La Anita", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Sottano", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Viña Cobos", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Piatelli", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Doña Paula", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Las Perdices", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Tierras de los Andes", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Chakana", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Maal Wines", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Las Touza", "latitud": "", "longitud": "", "descripcion": "" }
-    ],
-    "bodegas_maipu": [
-      { "nombre": "Atilio Avena", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Bodega Argentia", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Domiciano", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Tempus Alba", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Bodegas López", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "La Rural", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Trapiche", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Casa Vigil", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Finca El Paraíso", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Vistandes", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Casa Corbel", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Bombal", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Santa Julia", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Alandes", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Esencia 1870", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Agostino", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Ricardo Santos", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Argento", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Sinfin", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Antigal", "latitud": "", "longitud": "", "descripcion": "" }
-    ],
-    "bodegas_valle_uco": [
-      { "nombre": "Corazón del Sol", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Solo contigo", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Gimenez Riili", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Superuco", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Alpasion", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Enzo Bianchi", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "La Azul", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Adelma", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Domaine Bousquet", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Piedra Infinita", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Alfa Crux", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Monteviejo", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Diamandes", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Michel Rolland", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Masi", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Tikal", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Michelini Muffato", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Andeluna", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Salentein", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Atamisque", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Zorzal", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "La Vigilia", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Clos de los 7", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Claro oscuro", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Sophenia", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Huarpes Riglos", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Piedra Negra", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Cuvelier de los Andes", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Setebos", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Finca del Nunca Jamás", "latitud": "", "longitud": "", "descripcion": "" }
-    ],
-    "olivicolas": [
-      { "nombre": "Laur", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Pasrai", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Maguay", "latitud": "", "longitud": "", "descripcion": "" },
-      { "nombre": "Centenario", "latitud": "", "longitud": "", "descripcion": "" }
-    ]
-  }
+    "mapa_mendoza": {
+        "puntos_de_interes": [
+            {
+                "nombre": "Plaza Italia",
+                "latitud": "-32.8918689",
+                "longitud": "-68.8483505",
+                "descripcion": "Es una elegante plaza pública del centro de Mendoza que rinde homenaje a la comunidad italiana y ofrece un espacio verde con fuentes ornamentales, juegos infantiles y un entorno r...",
+                "imagenA": "plaza_italia_A.jpg",
+                "imagenB": "plaza_italia_B.jpg"
+            },
+            {
+                "nombre": "Plaza España",
+                "latitud": "-32.8929611",
+                "longitud": "-68.8420417",
+                "descripcion": "Es una pintoresca e histórica plaza decorada con detalladas mayólicas de estilo andaluz que ofrece un espacio de descanso con fuentes, bancos sombreados y un anfiteatro para event...",
+                "imagenA": "plaza_españa_A.jpg",
+                "imagenB": "plaza_españa_B.jpg"
+            },
+            {
+                "nombre": "Plaza Chile",
+                "latitud": "-32.886333",
+                "longitud": "-68.846954",
+                "descripcion": "Es un sombreado espacio verde que simboliza la fraternidad argentino-chilena y ofrece áreas de descanso, juegos infantiles, conectividad Wi-Fi gratuita y ferias artesanales ocasio...",
+                "imagenA": "img/map_img/plaza chile A.jpeg",
+                "imagenB": "img/map_img/plaza chile B.jpeg"
+            },
+            {
+                "nombre": "Plaza San Martín",
+                "latitud": "-32.8876594",
+                "longitud": "-68.8405866",
+                "descripcion": "Es una espaciosa plaza ubicada en el corazón del distrito financiero de la ciudad que cuenta con el icónico monumento ecuestre al General San Martín y ofrece amplios senderos peat...",
+                "imagenA": "img/map_img/plaza san martin A.jpeg",
+                "imagenB": "img/map_img/plaza san marin B.jpeg"
+            },
+            {
+                "nombre": "Plaza Independencia",
+                "latitud": "-32.8895571",
+                "longitud": "-68.8448326",
+                "descripcion": "Es la plaza principal e hito central de la Ciudad de Mendoza que ofrece espectáculos de aguas danzantes, puestos de artesanos, una oficina de informes turísticos y acceso al museo...",
+                "imagenA": "img/map_img/plaza independencia A.jpeg",
+                "imagenB": "img/map_img/plaza independencia B.jpeg"
+            },
+            {
+                "nombre": "Peatonal Sarmiento",
+                "latitud": "-32.890923",
+                "longitud": "-68.8397534",
+                "descripcion": "Es un concurrido y arbolado paseo peatonal de tres cuadras de extensión que ofrece una gran variedad de cafés con mesas al aire libre, locales comerciales, bancos y pérgolas de fl...",
+                "imagenA": "img/map_img/peatonal A.jpeg",
+                "imagenB": "img/map_img/peatonal B.jpeg"
+            },
+            {
+                "nombre": "Área Fundacional",
+                "latitud": "-32.8796477",
+                "longitud": "-68.8288632",
+                "descripcion": "Es un complejo histórico-arqueológico ubicado en el casco viejo de la ciudad que resguarda las ruinas de la antigua urbe colonial y ofrece un museo de sitio con visitas guiadas ed...",
+                "imagenA": "area_fundacional_A.jpg",
+                "imagenB": "area_fundacional_B.jpg"
+            },
+            {
+                "nombre": "Ruinas Jesuíticas",
+                "latitud": "-32.8789232",
+                "longitud": "-68.8296776",
+                "descripcion": "Son los restos arqueológicos consolidados del templo de la Compañía de Jesús destruido en el sismo de 1861, los cuales funcionan como un museo histórico a cielo abierto con cartelería informativa para turistas.",
+                "imagenA": "ruinas_jesuiticas_A.jpg",
+                "imagenB": "ruinas_jesuiticas_B.jpg"
+            },
+            {
+                "nombre": "Casa de Gobierno",
+                "latitud": "-32.8984112",
+                "longitud": "-68.8464461",
+                "descripcion": "Es el edificio administrativo central del Poder Ejecutivo provincial ubicado en el Parque Cívico que ofrece atención al ciudadano para trámites públicos y visitas guiadas a sus principales salones históricos.",
+                "imagenA": "casa_de_gobierno_A.jpg",
+                "imagenB": "casa_de_gobierno_B.jpg"
+            },
+            {
+                "nombre": "Poder Judicial",
+                "latitud": "-32.9002539",
+                "longitud": "-68.842174",
+                "descripcion": "Es un amplio pulmón verde parquizado en la zona sur del centro que alberga las principales sedes gubernamentales y ofrece senderos peatonales, espacios para picnic y estacionamiento regulado.",
+                "imagenA": "poder_judicial_A.jpg",
+                "imagenB": "poder_judicial_B.jpg"
+            },
+            {
+                "nombre": "Parque Cívico",
+                "latitud": "-32.8974504",
+                "longitud": "-68.8462295",
+                "descripcion": "Es un amplio pulmón verde parquizado en la zona sur del centro que alberga las principales sedes gubernamentales y ofrece senderos peatonales, espacios para picnic y estacionamiento regulado.",
+                "imagenA": "parque_civico_A.jpg",
+                "imagenB": "parque_civico_B.jpg"
+            },
+            {
+                "nombre": "Enoteca (museo del vino)",
+                "latitud": "-32.8906654",
+                "longitud": "-68.8400689",
+                "descripcion": "Es un museo dedicado al vino y la enología, ubicado en el corazón de la ciudad, que exhibe una amplia colección de vinos locales y extranjeros.",
+                "imagenA": "enoteca_museo_del_vino_A.jpg",
+                "imagenB": "enoteca_museo_del_vino_B.jpg"
+            },
+            {
+                "nombre": "Avenida Arístides Villanueva",
+                "latitud": "-32.8919863",
+                "longitud": "-68.8566425",
+                "descripcion": "Es el principal polo de entretenimiento nocturno de la ciudad que ofrece una vibrante oferta gastronómica compuesta por bares de cerveza artesanal, restaurantes de cocina internacional y locales comerciales de moda.",
+                "imagenA": "avenida_aristides_villanueva_A.jpg",
+                "imagenB": "avenida_aristides_villanueva_B.jpg"
+            },
+            {
+                "nombre": "Calle Emilio Civit",
+                "latitud": "-32.8876946",
+                "longitud": "-68.8554945",
+                "descripcion": "Es una distinguida e histórica avenida residencial que conecta el centro con el Parque General San Martín y destaca por sus señoriales mansiones de principios del siglo XX y amplias veredas arboladas.",
+                "imagenA": "calle_emilio_civit_A.jpg",
+                "imagenB": "calle_emilio_civit_B.jpg"
+            },
+            {
+                "nombre": "Portones del Parque",
+                "latitud": "-32.886616",
+                "longitud": "-68.8612388",
+                "descripcion": "Son las icónicas e imponentes estructuras de hierro negro y oro importadas de Escocia que sirven como entrada principal al Parque General San Martín y funcionan como hito fotográfico emblemático de la ciudad.",
+                "imagenA": "portones_del_parque_A.jpg",
+                "imagenB": "portones_del_parque_B.jpg"
+            },
+            {
+                "nombre": "Rotonda Caballitos de Marly",
+                "latitud": "-32.8863145",
+                "longitud": "-68.8629705",
+                "descripcion": "Es una rotunda histórica que marca el punto de encuentro de varias avenidas en el corazón del Parque General San Martín.",
+                "imagenA": "rotonda_caballitos_de_marly_A.jpg",
+                "imagenB": "rotonda_caballitos_de_marly_B.jpg"
+            },
+            {
+                "nombre": "Fuente de los Continentes",
+                "latitud": "-32.8890785",
+                "longitud": "-68.8664115",
+                "descripcion": "Es una fuente monumental que representa los continentes y se encuentra en el corazón del Parque General San Martín.",
+                "imagenA": "fuente_de_los_continentes_A.jpg",
+                "imagenB": "fuente_de_los_continentes_B.jpg"
+            },
+            {
+                "nombre": "Lago del Parque",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un lago natural que se encuentra en el Parque General San Martín y ofrece espacios para actividades recreativas.",
+                "imagenA": "lago_del_parque_A.jpg",
+                "imagenB": "lago_del_parque_B.jpg"
+            },
+            {
+                "nombre": "Estadio Islas Malvinas",
+                "latitud": "-32.8623903",
+                "longitud": "-68.8348339",
+                "descripcion": "Es un estadio de fútbol que alberga a los equipos locales y ofrece instalaciones para eventos deportivos.",
+                "imagenA": "estadio_islas_malvinas_A.jpg",
+                "imagenB": "estadio_islas_malvinas_B.jpg"
+            },
+            {
+                "nombre": "Cerro de la Gloria",
+                "latitud": "-32.8736194",
+                "longitud": "-68.8013124",
+                "descripcion": "Es un cerro que ofrece vistas panorámicas de la ciudad y alberga un mirador público.",
+                "imagenA": "cerro_de_la_gloria_A.jpg",
+                "imagenB": "cerro_de_la_gloria_B.jpg"
+            },
+            {
+                "nombre": "Anfiteatro Frank Romero Day",
+                "latitud": "-32.8918885",
+                "longitud": "-68.8931617",
+                "descripcion": "Es un anfiteatro de estilo clásico que alberga eventos culturales y espectáculos de gran envergadura.",
+                "imagenA": "anfiteatro_frank_romero_day_A.jpg",
+                "imagenB": "anfiteatro_frank_romero_day_B.jpg"
+            },
+            {
+                "nombre": "Museo Carlos Alonso",
+                "latitud": "-32.8880613",
+                "longitud": "-68.8547129",
+                "descripcion": "Es un museo que alberga una importante colección de arte y objetos de interés histórico.",
+                "imagenA": "museo_carlos_alonso_A.jpg",
+                "imagenB": "museo_carlos_alonso_B.jpg"
+            },
+            {
+                "nombre": "Tren de la Cultura",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un tren que recorre la ciudad y ofrece una visión única de los lugares de interés cultural.",
+                "imagenA": "tren_de_la_cultura_A.jpg",
+                "imagenB": "tren_de_la_cultura_B.jpg"
+            },
+            {
+                "nombre": "Aristóbula",
+                "latitud": "-32.8791752",
+                "longitud": "-68.8520012",
+                "descripcion": "Es un espacio cultural que alberga exposiciones de arte local y actividades educativas.",
+                "imagenA": "aristobula_A.jpg",
+                "imagenB": "aristobula_B.jpg"
+            },
+            {
+                "nombre": "Municipal de Arte Moderno MMAMM",
+                "latitud": "-32.8900536",
+                "longitud": "-68.8446464",
+                "descripcion": "Es un centro cultural que alberga exposiciones de arte moderno y contemporáneo.",
+                "imagenA": "municipal_de_arte_moderno_mmamm_A.jpg",
+                "imagenB": "municipal_de_arte_moderno_mmamm_B.jpg"
+            },
+            {
+                "nombre": "Pasado Cuyano",
+                "latitud": "-32.8918556",
+                "longitud": "-68.8471541",
+                "descripcion": "Es un espacio dedicado a la preservación y exhibición del patrimonio cultural de la región.",
+                "imagenA": "pasado_cuyano_A.jpg",
+                "imagenB": "pasado_cuyano_B.jpg"
+            },
+            {
+                "nombre": "ECA Eliana Molinelli",
+                "latitud": "-32.8881555",
+                "longitud": "-68.8400638",
+                "descripcion": "Es una institución educativa que ofrece programas de formación en diversas áreas del conocimiento.",
+                "imagenA": "eca_eliana_molinelli_A.jpg",
+                "imagenB": "eca_eliana_molinelli_B.jpg"
+            },
+            {
+                "nombre": "Histórico General San Martín",
+                "latitud": "-34.5869034",
+                "longitud": "-68.1431414",
+                "descripcion": "Es un espacio histórico que alberga exposiciones y actividades relacionadas con la historia de la ciudad.",
+                "imagenA": "historico_general_san_martin_A.jpg",
+                "imagenB": "historico_general_san_martin_B.jpg"
+            },
+            {
+                "nombre": "Ciencias Naturales Juan Cornelio Moyano",
+                "latitud": "-34.5869034",
+                "longitud": "-68.1431414",
+                "descripcion": "Es una institución académica que ofrece programas de estudio en las ciencias naturales.",
+                "imagenA": "ciencias_naturales_juan_cornelio_moyano_A.jpg",
+                "imagenB": "ciencias_naturales_juan_cornelio_moyano_B.jpg"
+            },
+            {
+                "nombre": "Archivo Histórico de Mendoza",
+                "latitud": "-32.8937431",
+                "longitud": "-68.8512684",
+                "descripcion": "Es un archivo que alberga documentos y objetos de interés histórico de la región.",
+                "imagenA": "archivo_historico_de_mendoza_A.jpg",
+                "imagenB": "archivo_historico_de_mendoza_B.jpg"
+            },
+            {
+                "nombre": "Pinacoteca Sanmartiniana",
+                "latitud": "-32.8978342",
+                "longitud": "-68.8431278",
+                "descripcion": "Es un espacio cultural que alberga una importante colección de pinturas y obras de arte de la región.",
+                "imagenA": "pinacoteca_sanmartiniana_A.jpg",
+                "imagenB": "pinacoteca_sanmartiniana_B.jpg"
+            },
+            {
+                "nombre": "Casa de San Martín",
+                "latitud": "-32.8826274",
+                "longitud": "-68.8318715",
+                "descripcion": "Es una casa histórica que alberga exposiciones y actividades relacionadas con la vida y obra de San Martín.",
+                "imagenA": "casa_de_san_martin_A.jpg",
+                "imagenB": "casa_de_san_martin_B.jpg"
+            },
+            {
+                "nombre": "Espacio Fotográfico Máximo Arias",
+                "latitud": "-32.8842132",
+                "longitud": "-68.8667126",
+                "descripcion": "Es un espacio dedicado a la fotografía y el fomento de la cultura visual.",
+                "imagenA": "espacio_fotografico_maximo_arias_A.jpg",
+                "imagenB": "espacio_fotografico_maximo_arias_B.jpg"
+            },
+            {
+                "nombre": "Memorial a la Bandera",
+                "latitud": "-32.8979644",
+                "longitud": "-68.8463712",
+                "descripcion": "Es un espacio dedicado a la memoria histórica y la conmemoración del país.",
+                "imagenA": "memorial_a_la_bandera_A.jpg",
+                "imagenB": "memorial_a_la_bandera_B.jpg"
+            },
+            {
+                "nombre": "Mercado Central",
+                "latitud": "-32.8850931",
+                "longitud": "-68.8416354",
+                "descripcion": "Es un mercado tradicional que ofrece productos locales y servicios.",
+                "imagenA": "mercado_central_A.jpg",
+                "imagenB": "mercado_central_B.jpg"
+            },
+            {
+                "nombre": "Mercado Artesanal Mendocino",
+                "latitud": "-32.8901132",
+                "longitud": "-68.8391027",
+                "descripcion": "Es un mercado que destaca por su ambiente artesanal y la venta de productos locales.",
+                "imagenA": "mercado_artesanal_mendocino_A.jpg",
+                "imagenB": "mercado_artesanal_mendocino_B.jpg"
+            },
+            {
+                "nombre": "Terraza Jardín Mirador",
+                "latitud": "-32.8978342",
+                "longitud": "-68.8431278",
+                "descripcion": "Es un espacio de descanso y recreación con vistas panorámicas de la ciudad.",
+                "imagenA": "terraza_jardin_mirador_A.jpg",
+                "imagenB": "terraza_jardin_mirador_B.jpg"
+            },
+            {
+                "nombre": "Casa Museo Molina Pico",
+                "latitud": "-32.8778883",
+                "longitud": "-68.8191699",
+                "descripcion": "Es una casa museo que alberga una importante colección de objetos históricos y culturales.",
+                "imagenA": "casa_museo_molina_pico_A.jpg",
+                "imagenB": "casa_museo_molina_pico_B.jpg"
+            },
+            {
+                "nombre": "Basílica de San Francisco",
+                "latitud": "-32.8867101",
+                "longitud": "-68.8413041",
+                "descripcion": "Es una basílica histórica que alberga importantes obras de arte religioso.",
+                "imagenA": "basilica_de_san_francisco_A.jpg",
+                "imagenB": "basilica_de_san_francisco_B.jpg"
+            },
+            {
+                "nombre": "Campo Histórico El Plumerillo",
+                "latitud": "-32.843345",
+                "longitud": "-68.8194789",
+                "descripcion": "Es un espacio histórico que alberga exposiciones y actividades relacionadas con la historia de la ciudad.",
+                "imagenA": "campo_historico_el_plumerillo_A.jpg",
+                "imagenB": "campo_historico_el_plumerillo_B.jpg"
+            },
+            {
+                "nombre": "Castillo de Las Heras",
+                "latitud": "-32.8584608",
+                "longitud": "-68.8265287",
+                "descripcion": "Es un castillo histórico que alberga exposiciones y actividades relacionadas con la historia de la región.",
+                "imagenA": "castillo_de_las_heras_A.jpg",
+                "imagenB": "castillo_de_las_heras_B.jpg"
+            },
+            {
+                "nombre": "Nacional del Vino y la Vendimia",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un espacio dedicado a la cultura del vino y las actividades relacionadas con la vendimia.",
+                "imagenA": "nacional_del_vino_y_la_vendimia_A.jpg",
+                "imagenB": "nacional_del_vino_y_la_vendimia_B.jpg"
+            },
+            {
+                "nombre": "Casa Fader",
+                "latitud": "-33.0049901",
+                "longitud": "-68.8673415",
+                "descripcion": "Es una institución cultural que alberga exposiciones y actividades relacionadas con la historia del arte.",
+                "imagenA": "casa_fader_A.jpg",
+                "imagenB": "casa_fader_B.jpg"
+            },
+            {
+                "nombre": "Ferroviario de Godoy Cruz",
+                "latitud": "-32.9286268",
+                "longitud": "-68.8583963",
+                "descripcion": "Es una estación ferroviaria histórica que conecta la ciudad con otras zonas del país.",
+                "imagenA": "ferroviario_de_godoy_cruz_A.jpg",
+                "imagenB": "ferroviario_de_godoy_cruz_B.jpg"
+            },
+            {
+                "nombre": "Museo Scout Mendoza",
+                "latitud": "-32.906319",
+                "longitud": "-68.7865094",
+                "descripcion": "Es un museo que alberga exposiciones y actividades relacionadas con el movimiento scout.",
+                "imagenA": "museo_scout_mendoza_A.jpg",
+                "imagenB": "museo_scout_mendoza_B.jpg"
+            },
+            {
+                "nombre": "MIA Museo",
+                "latitud": "-32.8852067",
+                "longitud": "-68.8961978",
+                "descripcion": "Es un museo que alberga exposiciones y actividades relacionadas con la historia del arte.",
+                "imagenA": "mia_museo_A.jpg",
+                "imagenB": "mia_museo_B.jpg"
+            },
+            {
+                "nombre": "Histórico Municipal Las Bóvedas",
+                "latitud": "-32.8643868",
+                "longitud": "-68.8679091",
+                "descripcion": "Es un espacio histórico que alberga exposiciones y actividades relacionadas con la historia de la ciudad.",
+                "imagenA": "historico_municipal_las_bovedas_A.jpg",
+                "imagenB": "historico_municipal_las_bovedas_B.jpg"
+            },
+            {
+                "nombre": "Julio César Lara",
+                "latitud": "-33.0385381",
+                "longitud": "-68.8961978",
+                "descripcion": "Es un espacio cultural que alberga exposiciones y actividades relacionadas con la historia del arte.",
+                "imagenA": "julio_cesar_lara_A.jpg",
+                "imagenB": "julio_cesar_lara_B.jpg"
+            },
+            {
+                "nombre": "Histórico y Natural Lavalle",
+                "latitud": "-32.6074249",
+                "longitud": "-67.5708536",
+                "descripcion": "Es un espacio histórico y natural que alberga exposiciones y actividades relacionadas con la historia y la naturaleza de la región.",
+                "imagenA": "historico_y_natural_lavalle_A.jpg",
+                "imagenB": "historico_y_natural_lavalle_B.jpg"
+            }
+        ],
+        "hoteles_centro": [
+            {
+                "nombre": "Hotel Hyatt",
+                "latitud": "-32.8890975",
+                "longitud": "-68.8458876",
+                "descripcion": "Es un prestigioso hotel de lujo de cinco estrellas con fachada colonial frente a la Plaza Independencia que ofrece habitaciones refinadas, tres restaurantes, spa de servicio compl...",
+                "imagenA": "hotel_hyatt_A.jpg",
+                "imagenB": "hotel_hyatt_B.jpg"
+            },
+            {
+                "nombre": "Hotel Sheraton",
+                "latitud": "-32.8922273",
+                "longitud": "-68.8380012",
+                "descripcion": "Es un hotel de categoría internacional ubicado cerca del centro financiero que cuenta con amplias habitaciones, piscina cubierta climatizada, un spa completo y opciones gastronómi...",
+                "imagenA": "hotel_sheraton_A.jpg",
+                "imagenB": "hotel_sheraton_B.jpg"
+            },
+            {
+                "nombre": "Hotel Diplomatic",
+                "latitud": "-32.8892959",
+                "longitud": "-68.8495494",
+                "descripcion": "Es un distinguido hotel de alta gama con un marcado estilo clásico europeo situado sobre la Avenida Belgrano que ofrece un restaurante de cocina gourmet, piscina descubierta, serv...",
+                "imagenA": "hotel_diplomatic_A.jpg",
+                "imagenB": "hotel_diplomatic_B.jpg"
+            },
+            {
+                "nombre": "Hotel Hilton",
+                "latitud": "-32.9008709",
+                "longitud": "-68.8003693",
+                "descripcion": "Es un moderno complejo hotelero ubicado frente al Mendoza Plaza Shopping que ofrece habitaciones confortables de categoría ejecutiva, piscina techada, spa integral, centro de conv...",
+                "imagenA": "hotel_hilton_A.jpg",
+                "imagenB": "hotel_hilton_B.jpg"
+            },
+            {
+                "nombre": "Hotel Amerian Executive",
+                "latitud": "-32.8986848",
+                "longitud": "-68.8633978",
+                "descripcion": "Es un hotel ejecutivo de diseño neoclásico ubicado a metros de los principales atractivos céntricos que ofrece habitaciones elegantes, una piscina al aire libre en la terraza, gim...",
+                "imagenA": "hotel_amerian_executive_A.jpg",
+                "imagenB": "hotel_amerian_executive_B.jpg"
+            },
+            {
+                "nombre": "Hotel Raíces Aconcagua",
+                "latitud": "-32.8924262",
+                "longitud": "-68.8474376",
+                "descripcion": "Es un hotel céntrico de estilo tradicional que brinda una estancia funcional y confortable con una gran piscina al aire libre, desayuno buffet de cortesía, salas de reuniones y fá...",
+                "imagenA": "hotel_raices_aconcagua_A.jpg",
+                "imagenB": "hotel_raices_aconcagua_B.jpg"
+            },
+            {
+                "nombre": "Hotel Portal Plaza Suites",
+                "latitud": "-32.8858037",
+                "longitud": "-68.8469051",
+                "descripcion": "Es un acogedor hotel boutique situado cerca de la zona comercial que combina la comodidad del hogar con servicios de hotelería a través de suites con kitchenette, terraza con hidr...",
+                "imagenA": "hotel_portal_plaza_suites_A.jpg",
+                "imagenB": "hotel_portal_plaza_suites_B.jpg"
+            },
+            {
+                "nombre": "Hotel Argentino",
+                "latitud": "-32.8883635",
+                "longitud": "-68.8449143",
+                "descripcion": "Es un hotel céntrico de estilo tradicional que brinda una estancia funcional y confortable con una gran piscina al aire libre, desayuno buffet de cortesía, salas de reuniones y fá...",
+                "imagenA": "hotel_argentino_A.jpg",
+                "imagenB": "hotel_argentino_B.jpg"
+            }
+        ],
+        "restaurantes": [
+            {
+                "nombre": "Soberana",
+                "latitud": "-32.8889244",
+                "longitud": "-68.8484705",
+                "descripcion": "Es un elegante restaurante de alta cocina ubicado en la Avenida Sarmiento que ofrece cortes de carne premium, platos contemporáneos bien presentados y una selecta carta de vinos e...",
+                "imagenA": "soberana_A.jpg",
+                "imagenB": "soberana_B.jpg"
+            },
+            {
+                "nombre": "Centauro",
+                "latitud": "-32.8883917",
+                "longitud": "-68.8483458",
+                "descripcion": "Es un prestigioso proyecto gastronómico con mención en la Guía Michelin que propone cocina de vanguardia basada en productos autóctonos y un menú de pasos maridado minuciosamente ...",
+                "imagenA": "centauro_A.jpg",
+                "imagenB": "centauro_B.jpg"
+            },
+            {
+                "nombre": "Carolino Cocina",
+                "latitud": "-32.8915682",
+                "longitud": "-68.8491686",
+                "descripcion": "Es un acogedor restaurante de estación ubicado frente a Plaza Italia que destaca por su cocina contemporánea argentina con platos que varían según la temporada y una variada selec...",
+                "imagenA": "carolino_cocina_A.jpg",
+                "imagenB": "carolino_cocina_B.jpg"
+            },
+            {
+                "nombre": "Anna Bistro",
+                "latitud": "-32.8837837",
+                "longitud": "-68.8510166",
+                "descripcion": "Es un restaurante gourmet con impronta francesa y amplios jardines que ofrece servicios desde el desayuno hasta la cena, destacando por sus carnes, opciones vegetarianas y ambient...",
+                "imagenA": "anna_bistro_A.jpg",
+                "imagenB": "anna_bistro_B.jpg"
+            },
+            {
+                "nombre": "Torito",
+                "latitud": "-32.8840559",
+                "longitud": "-68.8961978",
+                "descripcion": "Es un dinámico bar y hamburguesería gourmet muy popular entre el público joven que ofrece hamburguesas caseras de autor, porciones abundantes de papas fritas y una variada carta d...",
+                "imagenA": "torito_A.jpg",
+                "imagenB": "torito_B.jpg"
+            },
+            {
+                "nombre": "Chama Santuario",
+                "latitud": "-32.8895237",
+                "longitud": "-68.8503105",
+                "descripcion": "Es un exclusivo restaurante y bar de carnes que destaca por su concepto vanguardista y ofrece cortes premium a la parrilla, cocina de autor con productos regionales y una sofistic...",
+                "imagenA": "chama_santuario_A.jpg",
+                "imagenB": "chama_santuario_B.jpg"
+            },
+            {
+                "nombre": "Praga",
+                "latitud": "50.0755381",
+                "longitud": "14.4378005",
+                "descripcion": "Es un restobar de ambiente moderno y relajado que ofrece opciones de almuerzos ejecutivos durante el día y se transforma por las noches brindando picadas, pizzas caseras, cervezas...",
+                "imagenA": "praga_A.jpg",
+                "imagenB": "praga_B.jpg"
+            },
+            {
+                "nombre": "Mar y Monte",
+                "latitud": "-32.8901814",
+                "longitud": "-68.8616765",
+                "descripcion": "Es un restaurante tradicional que ofrece una propuesta culinaria equilibrada combinando mariscos y pescados frescos con carnes rojas a la parilla y platos típicos de la gastronomía mendocina.",
+                "imagenA": "mar_y_monte_A.jpg",
+                "imagenB": "mar_y_monte_B.jpg"
+            },
+            {
+                "nombre": "Republica",
+                "latitud": "-32.8918375",
+                "longitud": "-68.8560391",
+                "descripcion": "Es un elegante restaurante y bar de cócteles que propone una gastronomía contemporánea refinada basada en productos locales de estación, maridada con vinos seleccionados y tragos de autor en un entorno chic.",
+                "imagenA": "republica_A.jpg",
+                "imagenB": "republica_B.jpg"
+            },
+            {
+                "nombre": "Magnolia",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un íntimo y cálido bistró céntrico que ofrece un menú variado con opciones de pastas caseras, carnes, ensaladas elaboradas y un servicio atento ideal para cenas en pareja.",
+                "imagenA": "magnolia_A.jpg",
+                "imagenB": "magnolia_B.jpg"
+            },
+            {
+                "nombre": "Fuente y Fonda",
+                "latitud": "-32.8910807",
+                "longitud": "-68.8484922",
+                "descripcion": "Es un pintoresco restaurante de cocina de bodegón familiar que ofrece platos abundantes para compartir servidos en fuentes, destacando sus milanesas, canelones caseros y postres tradicionales que homenajean a la comida de hogar.",
+                "imagenA": "fuente_y_fonda_A.jpg",
+                "imagenB": "fuente_y_fonda_B.jpg"
+            },
+            {
+                "nombre": "Pez Globo",
+                "latitud": "-32.8876733",
+                "longitud": "-68.8498883",
+                "descripcion": "Es un restaurante especializado en gastronomía asiática y comida callejera que ofrece una colorida selección de piezas de sushi tradicional, platos al wok, ramen y coctelería temática en un ambiente descontracturado.",
+                "imagenA": "pez_globo_A.jpg",
+                "imagenB": "pez_globo_B.jpg"
+            },
+            {
+                "nombre": "La Lucia",
+                "latitud": "-32.8892563",
+                "longitud": "-68.847717",
+                "descripcion": "Es una reconocida parrilla de estilo moderno ubicada en el corazón gastronómico céntrico que ofrece cortes de carne vacuna de exportación a las brasas, achuras tradicionales y una generosa cava de vinos de la provincia.",
+                "imagenA": "la_lucia_A.jpg",
+                "imagenB": "la_lucia_B.jpg"
+            },
+            {
+                "nombre": "Ceibo",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un restaurante de cocina urbana argentina atendido por sus propios dueños que ofrece platos elaborados con técnicas modernas a partir de ingredientes autóctonos mendocinos y una excelente carta de vinos de autor.",
+                "imagenA": "ceibo_A.jpg",
+                "imagenB": "ceibo_B.jpg"
+            },
+            {
+                "nombre": "Cocina Gardenia",
+                "latitud": "-32.9018273",
+                "longitud": "-68.8533533",
+                "descripcion": "Es un bistró fresco y moderno enfocado en la alimentación consciente que ofrece opciones de platos saludables, ensaladas gourmet, sándwiches de masa madre y alternativas vegetarianas o sin TACC.",
+                "imagenA": "cocina_gardenia_A.jpg",
+                "imagenB": "cocina_gardenia_B.jpg"
+            },
+            {
+                "nombre": "La Cabrera",
+                "latitud": "-32.8917425",
+                "longitud": "-68.8378091",
+                "descripcion": "Es la prestigiosa y galardonada parrilla porteña instalada en la ciudad que ofrece una experiencia de carnes premium con cortes icónicos servidos al punto exacto acompañados de sus famosas y variadas cazuelas de guarniciones frías y calientes.",
+                "imagenA": "la_cabrera_A.jpg",
+                "imagenB": "la_cabrera_B.jpg"
+            },
+            {
+                "nombre": "Francesco",
+                "latitud": "-32.8876563",
+                "longitud": "-68.8455813",
+                "descripcion": "Es un restaurante de alta cocina italiana italiana liderado por la familia Barbera que ofrece pastas artesanales, risottos perfectos y mariscos refinados dentro de una elegante casona con un hermoso jardín parquizado.",
+                "imagenA": "francesco_A.jpg",
+                "imagenB": "francesco_B.jpg"
+            },
+            {
+                "nombre": "SushiClub",
+                "latitud": "-32.8884278",
+                "longitud": "-68.8498987",
+                "descripcion": "Es un restaurante exclusivo y vanguardista perteneciente a la famosa cadena nacional que ofrece piezas de sushi premium de estilo fusión, platos de la cocina nikkei y un ambiente sofisticado con iluminación tenue.",
+                "imagenA": "sushiclub_A.jpg",
+                "imagenB": "sushiclub_B.jpg"
+            },
+            {
+                "nombre": "Sancho",
+                "latitud": "-32.8921184",
+                "longitud": "-68.8388066",
+                "descripcion": "Es un clásico restaurante de hotel y centro que brinda un menú internacional confiable compuesto por carnes locales, minutas bien elaboradas y opciones ejecutivas ideales para almuerzos de negocios.",
+                "imagenA": "sancho_A.jpg",
+                "imagenB": "sancho_B.jpg"
+            },
+            {
+                "nombre": "La Bodeguita",
+                "latitud": "-32.8485473",
+                "longitud": "-68.8867397",
+                "descripcion": "Es un animado restaurante y bar temático inspirado en el caribe que ofrece platos latinoamericanos, música en vivo, espectáculos de baile y una famosa barra de coctelería caribeña centrada en los mojitos.",
+                "imagenA": "la_bodeguita_A.jpg",
+                "imagenB": "la_bodeguita_B.jpg"
+            },
+            {
+                "nombre": "Abrasado",
+                "latitud": "-32.8965157",
+                "longitud": "-68.8176216",
+                "descripcion": "Es el exclusivo restaurante de la Bodega Los Toneles distinguido a nivel internacional que ofrece una experiencia gastronómica premium especializada en carnes maduradas en seco (Dry Aged) y maridajes con vinos propios de alta gama.",
+                "imagenA": "abrasado_A.jpg",
+                "imagenB": "abrasado_B.jpg"
+            },
+            {
+                "nombre": "Club de Campo Cantina",
+                "latitud": "-32.9200696",
+                "longitud": "-68.8071065",
+                "descripcion": "Es el exclusivo restaurante de la Bodega Los Toneles distinguido a nivel internacional que ofrece una experiencia gastronómica premium especializada en carnes maduradas en seco (Dry Aged) y maridajes con vinos propios de alta gama.",
+                "imagenA": "club_de_campo_cantina_A.jpg",
+                "imagenB": "club_de_campo_cantina_B.jpg"
+            },
+            {
+                "nombre": "Bosco",
+                "latitud": "-32.8987726",
+                "longitud": "-68.8678488",
+                "descripcion": "Es un restaurante de diseño moderno integrado perfectamente en el entorno natural del Parque General San Martín que ofrece menús sofisticados que van desde desayunos y brunchs hasta cenas de alta cocina frente a sus ventanales.",
+                "imagenA": "bosco_A.jpg",
+                "imagenB": "bosco_B.jpg"
+            },
+            {
+                "nombre": "1884",
+                "latitud": "-32.9123585",
+                "longitud": "-68.8431094",
+                "descripcion": "Es un galardonado y exclusivo restaurante de fuegos liderado por el chef Francis Mallmann dentro de la Bodega Escorihuela Gascón en Godoy Cruz, que ofrece carnes de exportación e imponentes platos a la parrilla y al horno de barro maridados con vinos de alta gama.",
+                "imagenA": "1884_A.jpg",
+                "imagenB": "1884_B.jpg"
+            },
+            {
+                "nombre": "Tucson",
+                "latitud": "-32.9157535",
+                "longitud": "-68.8229686",
+                "descripcion": "Es un moderno restaurante de estilo steakhouse americano ubicado en La Barraca Mall que ofrece sabrosas costillitas de cerdo barbacoa, hamburguesas de autor y cortes de carne asados a la leña.",
+                "imagenA": "tucson_A.jpg",
+                "imagenB": "tucson_B.jpg"
+            },
+            {
+                "nombre": "Alcázar de la Cruz",
+                "latitud": "-32.9407679",
+                "longitud": "-68.7368141",
+                "descripcion": "Es un acogedor bodegón de estilo familiar con un hermoso jardín al aire libre en Guaymallén que se especializa en cocina española, destacando sus abundantes porciones de paella dominical y platos tradicionales.",
+                "imagenA": "alcazar_de_la_cruz_A.jpg",
+                "imagenB": "alcazar_de_la_cruz_B.jpg"
+            },
+            {
+                "nombre": "Caléndula",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es el primer restaurante con certificación carbono neutral del país, ubicado en la Quinta Sección, que se especializa en una propuesta gastronómica saludable y consciente con opciones veganas, sin TACC y jugos naturales.",
+                "imagenA": "calendula_A.jpg",
+                "imagenB": "calendula_B.jpg"
+            },
+            {
+                "nombre": "El Mercadito",
+                "latitud": "-32.8915088",
+                "longitud": "-68.8582281",
+                "descripcion": "Es un pionero restobar de cocina saludable en el centro que ofrece sándwiches creativos en pan de masa madre, ensaladas abundantes y jugos naturales en una atmósfera fresca y sustentable.",
+                "imagenA": "el_mercadito_A.jpg",
+                "imagenB": "el_mercadito_B.jpg"
+            },
+            {
+                "nombre": "Brutal alta cocina",
+                "latitud": "-32.8884519",
+                "longitud": "-68.8494018",
+                "descripcion": "Es un exclusivo proyecto gastronómico de autor en el Gran Mendoza que ofrece una experiencia íntima de cocina contemporánea argentina con menús de pasos meticulosamente elaborados.",
+                "imagenA": "brutal_alta_cocina_A.jpg",
+                "imagenB": "brutal_alta_cocina_B.jpg"
+            },
+            {
+                "nombre": "Auténtico",
+                "latitud": "-32.8886731",
+                "longitud": "-68.8491653",
+                "descripcion": "Es un restobar moderno y vibrante del centro que destaca por sus variados desayunos, brunches de estación y una carta nocturna enfocada en picadas, coctelería de autor y cervezas artesanales.",
+                "imagenA": "autentico_A.jpg",
+                "imagenB": "autentico_B.jpg"
+            },
+            {
+                "nombre": "El Faro",
+                "latitud": "-32.891698",
+                "longitud": "-68.842859",
+                "descripcion": "Es el distinguido restaurante ubicado en el piso 14 del Hotel Sheraton Mendoza que ofrece cocina internacional de alto nivel y cenas ejecutivas acompañadas de imponentes vistas panorámicas de 360 grados a toda la ciudad y la cordillera.",
+                "imagenA": "el_faro_A.jpg",
+                "imagenB": "el_faro_B.jpg"
+            },
+            {
+                "nombre": "La vida",
+                "latitud": "-32.9198108",
+                "longitud": "-68.8639454",
+                "descripcion": "Es un galardonado restaurante de fine dining recomendado por la Guía MICHELIN que funciona dentro del hotel boutique de Susana Balbo en Chacras de Coria, ofreciendo sofisticados menús de pasos y maridajes de alta gama que reinterpretan la cocina tradicional local.",
+                "imagenA": "la_vida_A.jpg",
+                "imagenB": "la_vida_B.jpg"
+            },
+            {
+                "nombre": "Bistro M",
+                "latitud": "-32.8890533",
+                "longitud": "-68.8460922",
+                "descripcion": "Es el refinado bistró de alta cocina perteneciente al hotel boutique Cavas Wine Lodge (con mención en la Guía Michelin) que ofrece un sofisticado menú de pasos con ingredientes orgánicos de su propia huerta y maridajes de vinos premium.",
+                "imagenA": "bistro_m_A.jpg",
+                "imagenB": "bistro_m_B.jpg"
+            },
+            {
+                "nombre": "Assemblage",
+                "latitud": "-33.002545",
+                "longitud": "-68.8741331",
+                "descripcion": "Es un innovador espacio gastronómico y bar de vinos que ofrece catas dirigidas, la posibilidad de diseñar tu propio blend de vino y tapeos gourmet diseñados para resaltar la tipicidad de los viñedos locales.",
+                "imagenA": "assemblage_A.jpg",
+                "imagenB": "assemblage_B.jpg"
+            },
+            {
+                "nombre": "Criolla",
+                "latitud": "-32.9005723",
+                "longitud": "-68.8533403",
+                "descripcion": "Es un animado restaurante de fuegos y cocina regional ubicado en un entorno de viñedos que propone empanadas mendocinas caseras, costillares a la llama y platos tradicionales argentinos en un ambiente campero relajado.",
+                "imagenA": "criolla_A.jpg",
+                "imagenB": "criolla_B.jpg"
+            },
+            {
+                "nombre": "Rincón del Malbec",
+                "latitud": "-33.0653763",
+                "longitud": "-68.9274674",
+                "descripcion": "Es una parrilla tradicional y restaurante de campo que ofrece una experiencia típicamente argentina con cortes de carne vacuna a las brasas, pastas caseras y una amplia variedad de etiquetas de vinos Malbec",
+                "imagenA": "rincon_del_malbec_A.jpg",
+                "imagenB": "rincon_del_malbec_B.jpg"
+            },
+            {
+                "nombre": "Michelini i Mufatto",
+                "latitud": "-33.399349",
+                "longitud": "-69.2998112",
+                "descripcion": "Es una prestigiosa bodega boutique familiar en el Valle de Uco que ofrece una exclusiva experiencia de enoturismo con visitas personalizadas y degustaciones de vinos de autor de mínima intervención y alta pureza.",
+                "imagenA": "michelini_i_mufatto_A.jpg",
+                "imagenB": "michelini_i_mufatto_B.jpg"
+            },
+            {
+                "nombre": "Cavas Don Guillermo Cano",
+                "latitud": "-33.0163622",
+                "longitud": "-68.8715694",
+                "descripcion": "Es un restaurante de cocina típica criolla y bodegón de campo que ofrece abundantes parrilladas a la leña, empanadas al horno de barro y vinos artesanales en un entorno folclórico.",
+                "imagenA": "cavas_don_guillermo_cano_A.jpg",
+                "imagenB": "cavas_don_guillermo_cano_B.jpg"
+            },
+            {
+                "nombre": "Andeluna Resto",
+                "latitud": "-33.455505",
+                "longitud": "-69.21215",
+                "descripcion": "Es el aclamado restaurante de la bodega Andeluna en Gualtallary que propone una experiencia gastronómica de alta gama basada en la cocina de fusión andina, ofreciendo menús de pasos maridados con sus reconocidos vinos frente a la Cordillera de los Andes.",
+                "imagenA": "andeluna_resto_A.jpg",
+                "imagenB": "andeluna_resto_B.jpg"
+            },
+            {
+                "nombre": "Casa Agostino Resto",
+                "latitud": "-33.1032425",
+                "longitud": "-68.6712265",
+                "descripcion": "Es un elegante restaurante rodeado de viñedos y huertas orgánicas en Maipú que ofrece un menú mediterráneo-argentino de estación maridado con sus propios vinos en un entorno de paz absoluta.",
+                "imagenA": "casa_agostino_resto_A.jpg",
+                "imagenB": "casa_agostino_resto_B.jpg"
+            },
+            {
+                "nombre": "Enlace Resto",
+                "latitud": "-33.1540963",
+                "longitud": "-68.9189928",
+                "descripcion": "Es un restaurante gourmet y bar de vinos que ofrece una propuesta gastronómica moderna y descontracturada combinando platos de autor, tablas de fiambres regionales y etiquetas seleccionadas de pequeños productores mendocinos",
+                "imagenA": "enlace_resto_A.jpg",
+                "imagenB": "enlace_resto_B.jpg"
+            },
+            {
+                "nombre": "Quimera Bistro",
+                "latitud": "-33.1049507",
+                "longitud": "68.8977516",
+                "descripcion": "Es el prestigioso restaurante de la Bodega Achaval-Ferrer (recomendado por la Guía Michelin) que ofrece un menú ejecutivo y de pasos enfocado en reinterpretar la cocina autóctona mediante ingredientes de su huerta orgánica",
+                "imagenA": "quimera_bistro_A.jpg",
+                "imagenB": "quimera_bistro_B.jpg"
+            },
+            {
+                "nombre": "5 Suelos",
+                "latitud": "-33.0259466",
+                "longitud": "-68.9500629",
+                "descripcion": "Es el sofisticado restaurante de cocina de viñedo de la Bodega Durigutti en Luján de Cuyo que ofrece una experiencia culinaria excepcional basada en los diferentes perfiles del suelo mendocino con un menú hilvanado con alta enología.",
+                "imagenA": "5_suelos_A.jpg",
+                "imagenB": "5_suelos_B.jpg"
+            },
+            {
+                "nombre": "Cundo Altamira",
+                "latitud": "-33.7731576",
+                "longitud": "-69.1392087",
+                "descripcion": "Es un exclusivo restaurante de fuegos ubicado en la codiciada región vitivinícola de Paraje Altamira que ofrece asados criollos gourmet, opciones al disco de arado y una vista espectacular desde su terraza hacia los viñedos.",
+                "imagenA": "cundo_altamira_A.jpg",
+                "imagenB": "cundo_altamira_B.jpg"
+            },
+            {
+                "nombre": "Terraza Ruda Cocina",
+                "latitud": "-33.3749413",
+                "longitud": "-69.2082593",
+                "descripcion": "Es un íntimo y aplaudido restaurante de montaña ubicado en Tupungato Winelands que propone una cocina rústica refinada basada en productos del Valle de Uco, fuegos abiertos y vinos de pequeños productores de la zona.",
+                "imagenA": "terraza_ruda_cocina_A.jpg",
+                "imagenB": "terraza_ruda_cocina_B.jpg"
+            },
+            {
+                "nombre": "Rope",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un exclusivo restaurante de cocina de autor y regional asesorado por Juliana López May, ubicado dentro de la Bodega La Vigilia en el Valle de Uco, que ofrece almuerzos y cenas maridados con vinos premium frente a una vista espectacular de la cordillera. [1, 2, 3, 4]",
+                "imagenA": "rope_A.jpg",
+                "imagenB": "rope_B.jpg"
+            },
+            {
+                "nombre": "Espacio Trapiche",
+                "latitud": "-32.9724034",
+                "longitud": "-68.7464789",
+                "descripcion": "Es el galardonado restaurante de la histórica Bodega Trapiche en Maipú que ofrece un concepto gastronómico de kilómetro 0 donde todos los vegetales provienen de su huerta bio-dinámica, acompañando platos de alta cocina y cortes premium.",
+                "imagenA": "espacio_trapiche_A.jpg",
+                "imagenB": "espacio_trapiche_B.jpg"
+            },
+            {
+                "nombre": "7 Fuegos",
+                "latitud": "-33.5893225",
+                "longitud": "-69.2204036",
+                "descripcion": "Es el icónico restaurante del chef Francis Mallmann dentro del lujoso resort The Vines of Mendoza en el Valle de Uco, el cual ofrece una espectacular experiencia gastronómica al aire libre centrada en carnes e ingredientes locales cocinados con siete técnicas distintas de fuego abierto.",
+                "imagenA": "7_fuegos_A.jpg",
+                "imagenB": "7_fuegos_B.jpg"
+            },
+            {
+                "nombre": "Mirador Restaurante",
+                "latitud": "-32.8921028",
+                "longitud": "-68.8379962",
+                "descripcion": "Es un restaurante panorámico situado en una ubicación privilegiada de la zona vitivinícola o de montaña que ofrece platos de la cocina argentina contemporánea con imponentes ventanales hacia los viñedos y picos nevados.",
+                "imagenA": "mirador_restaurante_A.jpg",
+                "imagenB": "mirador_restaurante_B.jpg"
+            },
+            {
+                "nombre": "Rastro",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un innovador restaurante ubicado en la finca La Isabel Estate en Gualtallary que ofrece almuerzos temáticos basados en las corrientes migratorias de la Argentina, combinando recetas de raíces culturales con vinos de altura del Valle de Uco",
+                "imagenA": "rastro_A.jpg",
+                "imagenB": "rastro_B.jpg"
+            },
+            {
+                "nombre": "Las Jarillas",
+                "latitud": "-32.8872136",
+                "longitud": "-68.9003966",
+                "descripcion": "Es un restaurante campestre y de montaña ubicado camino a las zonas turísticas que ofrece empanadas fritas, chivito asado a las brasas, pastelería artesanal y un ambiente rural ideal para familias.Es un restaurante rústico y acogedor ubicado en el corazón del Valle de Uco, que ofrece una experiencia gastronómica auténtica con platos inspirados en la cocina campesina argentina.",
+                "imagenA": "las_jarillas_A.jpg",
+                "imagenB": "las_jarillas_B.jpg"
+            },
+            {
+                "nombre": "Osadía de Crear",
+                "latitud": "-33.1156767",
+                "longitud": "-68.8984931",
+                "descripcion": "Es el sofisticado restaurante de la Bodega Susana Balbo en Luján de Cuyo que ofrece una propuesta gastronómica vanguardista que fusiona técnicas internacionales con ingredientes locales en menús de pasos inspirados en el espíritu audaz de su creadora.",
+                "imagenA": "osadia_de_crear_A.jpg",
+                "imagenB": "osadia_de_crear_B.jpg"
+            },
+            {
+                "nombre": "Martino Wines Resto",
+                "latitud": "-33.02306",
+                "longitud": "-68.852747",
+                "descripcion": "Es el exclusivo bistró de la bodega Martino Wines en Luján de Cuyo que propone una experiencia enoturística integral con almuerzos gourmet al aire libre y platos maridados con variedades de uvas no tradicionales y vinos de alta gama.",
+                "imagenA": "martino_wines_resto_A.jpg",
+                "imagenB": "martino_wines_resto_B.jpg"
+            },
+            {
+                "nombre": "Isidris",
+                "latitud": "-32.8957357",
+                "longitud": "-68.8614276",
+                "descripcion": "Es un restaurante y casa de té de montaña rodeado de naturaleza que ofrece ricos desayunos, meriendas completas con tortas caseras, y un menú de almuerzos rústicos ideales para disfrutar tras una jornada de senderismo.",
+                "imagenA": "isidris_A.jpg",
+                "imagenB": "isidris_B.jpg"
+            }
+        ],
+        "restaurante_esstrella_michelin": [
+            {
+                "nombre": "Casa Vigil",
+                "latitud": "-33.0442513",
+                "longitud": "-68.7240961",
+                "descripcion": "Es un aclamado restaurante de terroir en Maipú galardonado con una Estrella Michelin y una Estrella Verde que ofrece un menú de pasos de inspiración familiar maridado de forma exc...",
+                "imagenA": "casa_vigil_A.jpg",
+                "imagenB": "casa_vigil_B.jpg"
+            },
+            {
+                "nombre": "Zonda",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es el sofisticado espacio culinario de la Bodega Lagarde merecedor de una Estrella Michelin y una Estrella Verde que brinda una experiencia inmersiva basada en los ciclos de la hu...",
+                "imagenA": "zonda_A.jpg",
+                "imagenB": "zonda_B.jpg"
+            },
+            {
+                "nombre": "Azafrán",
+                "latitud": "-32.8887093",
+                "longitud": "-68.8491055",
+                "descripcion": "Es un galardonado restaurante en el centro de Mendoza distinguido con una Estrella Michelin que propone una alta cocina argentina basada en la investigación histórica de ingredien...",
+                "imagenA": "azafran_A.jpg",
+                "imagenB": "azafran_B.jpg"
+            },
+            {
+                "nombre": "Brindillas",
+                "latitud": "-33.0057483",
+                "longitud": "-68.910629",
+                "descripcion": "Es un íntimo y exclusivo restaurante comandado por el chef Mariano Gallego en Vistalba que mantiene su Estrella Michelin gracias a un refinado menú de degustación contemporáneo de...",
+                "imagenA": "brindillas_A.jpg",
+                "imagenB": "brindillas_B.jpg"
+            },
+            {
+                "nombre": "Riccitelli Bistro",
+                "latitud": "-33.03084",
+                "longitud": "-68.9573253",
+                "descripcion": "Es el aplaudido restaurante de bodega liderado por el chef Juan Ventureyra que ostenta una Estrella Michelin y una Estrella Verde por su innovadora propuesta enfocada en vegetales...",
+                "imagenA": "riccitelli_bistro_A.jpg",
+                "imagenB": "riccitelli_bistro_B.jpg"
+            },
+            {
+                "nombre": "Angélica Zapata",
+                "latitud": "-33.1640875",
+                "longitud": "-68.9195863",
+                "descripcion": "Es el imponente restaurante de la Bodega Catena Zapata distinguido con una Estrella Michelin y una Estrella Verde que propone un concept \"wine-first\" donde los platos de estación...",
+                "imagenA": "angelica_zapata_A.jpg",
+                "imagenB": "angelica_zapata_B.jpg"
+            }
+        ],
+        "tiendas": [
+            {
+                "nombre": "Entre 2 (Centro)",
+                "latitud": "-32.8887608",
+                "longitud": "-68.8497625",
+                "descripcion": "Es una reconocida franquicia céntrica de Entre Dos dedicada a la cafetería de especialidad y la comercialización de sus galardonados alfajores premium, conitos y delicatessen regi...",
+                "imagenA": "entre_2_centro_A.jpg",
+                "imagenB": "entre_2_centro_B.jpg"
+            },
+            {
+                "nombre": "Entre 2 (Fábrica Potrerillos)",
+                "latitud": "-32.9607061",
+                "longitud": "-69.1975602",
+                "descripcion": "Es una icónica parada turística camino a la montaña que combina una lujosa cafetería con vistas panorámicas y una tienda de fábrica donde se vende toda su variedad de alfajores ar...",
+                "imagenA": "entre_2_fabrica_potrerillos_A.jpg",
+                "imagenB": "entre_2_fabrica_potrerillos_B.jpg"
+            },
+            {
+                "nombre": "Brillat Savarin",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un premiado laboratorio de sabores y pastelería artesanal de alta gama que se destaca por sus impecables preparaciones de estilo francés como macarons, croissants y panadería...",
+                "imagenA": "brillat_savarin_A.jpg",
+                "imagenB": "brillat_savarin_B.jpg"
+            },
+            {
+                "nombre": "Gouher",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una destacada chocolatería familiar con locales en la ciudad y el Mercado Central que ofrece exquisitos bombones pintados a mano, naranjitas bañadas en chocolate, conitos mixto...",
+                "imagenA": "gouher_A.jpg",
+                "imagenB": "gouher_B.jpg"
+            },
+            {
+                "nombre": "Chocolezza (Centro)",
+                "latitud": "-32.8874626",
+                "longitud": "-68.8498542",
+                "descripcion": "Es una tradicional fábrica y local comercial céntrico especializado en la elaboración artesanal de alfajores mendocinos rellenos de abundante dulce de leche, chocolates en rama y ...",
+                "imagenA": "chocolezza_centro_A.jpg",
+                "imagenB": "chocolezza_centro_B.jpg"
+            },
+            {
+                "nombre": "La Cabaña (Fábrica)",
+                "latitud": "-32.8722058",
+                "longitud": "-68.8347895",
+                "descripcion": "Es una emblemática planta de elaboración con salón de ventas que invita a los turistas a conocer el proceso de fabricación de sus famosos chocolates, alfajores y dulces artesanale...",
+                "imagenA": "la_cabana_fabrica_A.jpg",
+                "imagenB": "la_cabana_fabrica_B.jpg"
+            },
+            {
+                "nombre": "Cueros Armando",
+                "latitud": "-32.8851806",
+                "longitud": "-68.8437741",
+                "descripcion": "Es una distinguida e histórica tienda especializada en la venta de camperas de cuero legítimo, carteras de alta calidad, calzado y accesorios artesanales con atención personalizad...",
+                "imagenA": "cueros_armando_A.jpg",
+                "imagenB": "cueros_armando_B.jpg"
+            },
+            {
+                "nombre": "Vauren",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una exclusiva boutique de moda que ofrece colecciones de indumentaria contemporánea, prendas de diseño independiente y accesorios seleccionados para el público local.",
+                "imagenA": "vauren_A.jpg",
+                "imagenB": "vauren_B.jpg"
+            },
+            {
+                "nombre": "La Estancia 1980",
+                "latitud": "-32.8897063",
+                "longitud": "-68.8404124",
+                "descripcion": "Es un tradicional local comercial enfocado en artículos regionales de cuero, platería criolla, indumentaria de campo y recuerdos autóctonos ideales para visitantes internacionales.",
+                "imagenA": "la_estancia_1980_A.jpg",
+                "imagenB": "la_estancia_1980_B.jpg"
+            },
+            {
+                "nombre": "Fiorentino",
+                "latitud": "-32.891624",
+                "longitud": "-68.8459023",
+                "descripcion": "Es una elegante sastrería y tienda de indumentaria masculina fina que brinda servicios de confección a medida, trajes de etiqueta y marcas seleccionadas de alta calidad en el centro de la ciudad.",
+                "imagenA": "fiorentino_A.jpg",
+                "imagenB": "fiorentino_B.jpg"
+            },
+            {
+                "nombre": "Alain de France",
+                "latitud": "-32.8904427",
+                "longitud": "-68.8414627",
+                "descripcion": "Es una clásica zapatería y marroquinería céntrica que se especializa en calzado de cuero legítimo para hombres y mujeres, destacando por el confort y la durabilidad de sus diseños.",
+                "imagenA": "alain_de_france_A.jpg",
+                "imagenB": "alain_de_france_B.jpg"
+            },
+            {
+                "nombre": "Umbral Marroquinería",
+                "latitud": "-32.8883869",
+                "longitud": "-68.8385716",
+                "descripcion": "Es una reconocida tienda dedicada a la venta de valijas, carteras, mochilas, billeteras de cuero y accesorios de viaje de marcas líderes y excelente calidad.",
+                "imagenA": "umbral_marroquineria_A.jpg",
+                "imagenB": "umbral_marroquineria_B.jpg"
+            },
+            {
+                "nombre": "Hi Travellers",
+                "latitud": "-32.9557935",
+                "longitud": "-68.8597651",
+                "descripcion": "Es un hermosa tienda ubicada en el Mal de Palmares, ofrece toda variedad de valijas, marroquineria y articulos de viajes.",
+                "imagenA": "hi_travellers_A.jpg",
+                "imagenB": "hi_travellers_B.jpg"
+            },
+            {
+                "nombre": "Wine Up",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Se destaca por la atención sumamente experta de su personal y una excelente variedad de etiquetas boutique que compensan sus precios.",
+                "imagenA": "wine_up_A.jpg",
+                "imagenB": "wine_up_B.jpg"
+            },
+            {
+                "nombre": "Malbec Tienda",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es muy apreciada por los clientes gracias a su oferta de etiquetas exclusivas de esta cepa y formatos innovadores con una gran relación calidad-precio.",
+                "imagenA": "malbec_tienda_A.jpg",
+                "imagenB": "malbec_tienda_B.jpg"
+            },
+            {
+                "nombre": "Fans del vino",
+                "latitud": "-32.888695",
+                "longitud": "-68.8488052",
+                "descripcion": "Es un espacio moderno y descontracturado, famoso por servir vinos naturales, orgánicos y naranjos en vasos de vidrio clásico rodeados de un gran ambiente social.",
+                "imagenA": "fans_del_vino_A.jpg",
+                "imagenB": "fans_del_vino_B.jpg"
+            },
+            {
+                "nombre": "Sol y vino",
+                "latitud": "-32.889307",
+                "longitud": "-68.847907",
+                "descripcion": "Es una de las vinotecas más populares de la ciudad, elogiada constantemente por su paciencia al recomendar etiquetas y sus importantes descuentos por pago en efectivo.",
+                "imagenA": "sol_y_vino_A.jpg",
+                "imagenB": "sol_y_vino_B.jpg"
+            },
+            {
+                "nombre": "Tradición Vinos",
+                "latitud": "-32.8730216",
+                "longitud": "-68.8375969",
+                "descripcion": "Es un local de espíritu clásico valorado por su atención barrial confiable y su activa participación en los eventos culturales y vinerías de la ciudad.",
+                "imagenA": "tradicion_vinos_A.jpg",
+                "imagenB": "tradicion_vinos_B.jpg"
+            },
+            {
+                "nombre": "Portal del viento",
+                "latitud": "-32.8891904",
+                "longitud": "-68.8429236",
+                "descripcion": "Es una reconocida fábrica familiar muy aplaudida por la calidad artesanal y la originalidad de sus alfajores premium, destacándose los sabores de Malbec y ahumado.",
+                "imagenA": "portal_del_viento_A.jpg",
+                "imagenB": "portal_del_viento_B.jpg"
+            }
+        ],
+        "tour_alta_montana": [
+            {
+                "nombre": "Cacheuta",
+                "latitud": "-33.0158505",
+                "longitud": "-69.1171721",
+                "descripcion": "Es una pintoresca localidad precordillerana famosa por su histórico puente colgante y su parque de aguas termales, que ofrece un entorno ideal para la relajación en plena naturaleza.",
+                "imagenA": "cacheuta_A.jpg",
+                "imagenB": "cacheuta_B.jpg"
+            },
+            {
+                "nombre": "Potrerillos",
+                "latitud": "-32.9607061",
+                "longitud": "-69.1975602",
+                "descripcion": "Es un imponente valle de montaña centrado alrededor de un majestuoso embalse de aguas turquesas, que se destaca como el principal polo de turismo aventura y deportes acuáticos de la provincia.",
+                "imagenA": "potrerillos_A.jpg",
+                "imagenB": "potrerillos_B.jpg"
+            },
+            {
+                "nombre": "Uspallata",
+                "latitud": "-32.5910827",
+                "longitud": "-69.3478836",
+                "descripcion": "Es un extenso y fértil valle cordillerano lleno de historia sanmartiniana, caracterizado por sus añosas arboledas y por ser la parada estratégica para quienes suben a la alta montaña.",
+                "imagenA": "uspallata_A.jpg",
+                "imagenB": "uspallata_B.jpg"
+            },
+            {
+                "nombre": "Penitentes",
+                "latitud": "-32.8409382",
+                "longitud": "-69.8411273",
+                "descripcion": "Es un emblemático centro de montaña que durante el invierno funciona para los deportes de nieve y en verano sirve como base logística y de aclimatación para andinistas.",
+                "imagenA": "penitentes_A.jpg",
+                "imagenB": "penitentes_B.jpg"
+            },
+            {
+                "nombre": "Puente del Inca",
+                "latitud": "-32.8222043",
+                "longitud": "-69.9237139",
+                "descripcion": "Es una llamativa formación geológica que crea un puente natural sobre el río Las Cuevas, teñido de vibrantes colores ocres y naranjas por las aguas sulfurosas que lo bañan.",
+                "imagenA": "puente_del_inca_A.jpg",
+                "imagenB": "puente_del_inca_B.jpg"
+            },
+            {
+                "nombre": "Cerro Aconcagua",
+                "latitud": "-32.653179",
+                "longitud": "-70.0108675",
+                "descripcion": "Es el pico más alto del hemisferio occidental, situado dentro de un espectacular parque provincial que protege glaciares y desafía a montañistas de todo el mundo.",
+                "imagenA": "cerro_aconcagua_A.jpg",
+                "imagenB": "cerro_aconcagua_B.jpg"
+            }
+        ],
+        "lujan_de_cuyo_bodegas": [
+            {
+                "nombre": "Pulenta Estate",
+                "latitud": "-33.1962909",
+                "longitud": "-68.9560207",
+                "descripcion": "Es una elegante bodega de alta gama que combina la herencia vitivinícola familiar con tecnología de punta, destacándose por sus vinos refinados y modernas instalaciones para degustaciones.",
+                "imagenA": "pulenta_estate_A.jpg",
+                "imagenB": "pulenta_estate_B.jpg"
+            },
+            {
+                "nombre": "Mendel",
+                "latitud": "-33.0270567",
+                "longitud": "-68.854011",
+                "descripcion": "Es una prestigiosa bodega boutique liderada por enólogos de renombre, enfocada en la elaboración de partidas limitadas de vinos excepcionales a partir de viñedos antiguos seleccionados.",
+                "imagenA": "mendel_A.jpg",
+                "imagenB": "mendel_B.jpg"
+            },
+            {
+                "nombre": "Ver sacrum",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un innovador proyecto vitivinícola que rescata el cultivo de cepas menos tradicionales en Mendoza, ofreciendo vinos frescos, ligeros y con un concepto estético muy original.",
+                "imagenA": "ver_sacrum_A.jpg",
+                "imagenB": "ver_sacrum_B.jpg"
+            },
+            {
+                "nombre": "Caelum",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una finca y bodega familiar boutique ubicada en Agrelo que se distingue por su cuidado netamente artesanal, produciendo vinos elegantes y pistachos de gran calidad.",
+                "imagenA": "caelum_A.jpg",
+                "imagenB": "caelum_B.jpg"
+            },
+            {
+                "nombre": "Alta vista",
+                "latitud": "-33.0026271",
+                "longitud": "-68.874165",
+                "descripcion": "Es una bodega histórica pionera en la valorización de terruños específicos, que funciona en un edificio patrimonial restaurado donde se une la experiencia francesa con la tradición local.",
+                "imagenA": "alta_vista_A.jpg",
+                "imagenB": "alta_vista_B.jpg"
+            },
+            {
+                "nombre": "Matervini",
+                "latitud": "-33.0584644",
+                "longitud": "-68.9124864",
+                "descripcion": "Es un exclusivo emprendimiento enológico dedicado a explorar las distintas expresiones geológicas del Malbec a través de uvas provenientes de terruños extremos e inusuales.",
+                "imagenA": "matervini_A.jpg",
+                "imagenB": "matervini_B.jpg"
+            },
+            {
+                "nombre": "Séptima",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una imponente bodega de moderna arquitectura en piedra inspirada en las construcciones andinas, reconocida por sus espumantes y su restaurante con terrazas panorámicas.",
+                "imagenA": "septima_A.jpg",
+                "imagenB": "septima_B.jpg"
+            },
+            {
+                "nombre": "Achaval Ferrer",
+                "latitud": "-33.0565695",
+                "longitud": "-68.9137383",
+                "descripcion": "Es una bodega de fama mundial conocida por sus Malbec de viñedos centenarios y sus catas exclusivas con vistas panorámicas al río y la montaña.",
+                "imagenA": "achaval_ferrer_A.jpg",
+                "imagenB": "achaval_ferrer_B.jpg"
+            },
+            {
+                "nombre": "Krontiras",
+                "latitud": "-33.0674516",
+                "longitud": "-68.8444053",
+                "descripcion": "Es una bodega biodinámica de singular arquitectura que ofrece vinos orgánicos de excelente calidad y una experiencia muy íntima y conectada con la naturaleza.",
+                "imagenA": "krontiras_A.jpg",
+                "imagenB": "krontiras_B.jpg"
+            },
+            {
+                "nombre": "Chandon",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es la bodega pionera en burbujas de Mendoza, célebre por sus espectaculares jardines y sus degustaciones y maridajes centrados exclusivamente en espumantes.",
+                "imagenA": "chandon_A.jpg",
+                "imagenB": "chandon_B.jpg"
+            },
+            {
+                "nombre": "Catena Zapata",
+                "latitud": "-33.1640875",
+                "longitud": "-68.9195863",
+                "descripcion": "Es una de las bodegas más emblemáticas e imponentes de Argentina, famosa por su arquitectura en forma de pirámide maya y sus vinos de prestigio internacional.",
+                "imagenA": "catena_zapata_A.jpg",
+                "imagenB": "catena_zapata_B.jpg"
+            },
+            {
+                "nombre": "Quimera",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un espacio vitivinícola boutique valorado por sus vinos de ensamble (assemblages) de alta gama y su atención sumamente personalizada en grupos pequeños.",
+                "imagenA": "quimera_A.jpg",
+                "imagenB": "quimera_B.jpg"
+            },
+            {
+                "nombre": "Norton",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una bodega tradicional y centenaria que se destaca por sus hermosos jardines, su excelente propuesta gastronómica y sus divertidas actividades interactivas como: creá tu propio vino.",
+                "imagenA": "norton_A.jpg",
+                "imagenB": "norton_B.jpg"
+            },
+            {
+                "nombre": "Clos de Chacras",
+                "latitud": "-32.9844108",
+                "longitud": "-68.8771259",
+                "descripcion": "Es una bodega boutique histórica ubicada en el corazón de Chacras de Coria, muy apreciada por su encanto antiguo y su restaurante de primer nivel sobre una laguna con carpas koi.",
+                "imagenA": "clos_de_chacras_A.jpg",
+                "imagenB": "clos_de_chacras_B.jpg"
+            },
+            {
+                "nombre": "Tierras Altas",
+                "latitud": "-32.979925",
+                "longitud": "-68.846703",
+                "descripcion": "Es una de las primeras bodegas boutique de Mendoza, destacada por ser pionera en el turismo enológico y por ofrecer cálidas visitas guiadas a cargo de sus propios dueños.",
+                "imagenA": "tierras_altas_A.jpg",
+                "imagenB": "tierras_altas_B.jpg"
+            },
+            {
+                "nombre": "Hacienda del Plata",
+                "latitud": "-32.99295",
+                "longitud": "-68.863275",
+                "descripcion": "Es una pequeña y pintoresca bodega familiar en Chacras de Coria donde los visitantes destacan la atención personalizada y sus excelentes tablas de fiambres acompañadas de Malbec.",
+                "imagenA": "hacienda_del_plata_A.jpg",
+                "imagenB": "hacienda_del_plata_B.jpg"
+            },
+            {
+                "nombre": "Viamonte",
+                "latitud": "-33.004464",
+                "longitud": "-68.8871857",
+                "descripcion": "Es una bodega muy recomendada por su ambiente relajado y joven, ofreciendo atardeceres mágicos, buena gastronomía y vinos frescos con la cordillera de fondo.",
+                "imagenA": "viamonte_A.jpg",
+                "imagenB": "viamonte_B.jpg"
+            },
+            {
+                "nombre": "Artesanal L' orange",
+                "latitud": "-32.987204",
+                "longitud": "-68.8881807",
+                "descripcion": "Es un proyecto boutique que fascina a los visitantes por sus singulares vinos naturales y naranjos, además de su enfoque completamente artesanal y desestructurado.",
+                "imagenA": "artesanal_l_orange_A.jpg",
+                "imagenB": "artesanal_l_orange_B.jpg"
+            },
+            {
+                "nombre": "Benegas",
+                "latitud": "-32.9020415",
+                "longitud": "-68.8506515",
+                "descripcion": "Es una histórica bodega subterránea que transporta a los visitantes al pasado mendocino, destacándose por su singular sala de ponchos y la degustación de sus reconocidos vinos de guarda.",
+                "imagenA": "benegas_A.jpg",
+                "imagenB": "benegas_B.jpg"
+            },
+            {
+                "nombre": "Nieto Senetiner",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una bodega clásica en Vistalba con un hermoso entorno de añosos viñedos, valorada por sus agradables almuerzos al aire libre y sus vinos de excelente relación calidad-precio.",
+                "imagenA": "nieto_senetiner_A.jpg",
+                "imagenB": "nieto_senetiner_B.jpg"
+            },
+            {
+                "nombre": "Roberto Bonfanti",
+                "latitud": "-33.061754",
+                "longitud": "-68.8664547",
+                "descripcion": "Es una pequeña bodega familiar en Luján de Cuyo donde la atención directa de la familia y la calidez del recorrido la convierten en una experiencia sumamente entrañable.",
+                "imagenA": "roberto_bonfanti_A.jpg",
+                "imagenB": "roberto_bonfanti_B.jpg"
+            },
+            {
+                "nombre": "Luigi Bosca",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una de las bodegas más tradicionales y prestigiosas del país, elogiada por la sofisticación de sus vinos y su elegante propuesta de degustación que repasa la historia vitivinícola argentina.",
+                "imagenA": "luigi_bosca_A.jpg",
+                "imagenB": "luigi_bosca_B.jpg"
+            },
+            {
+                "nombre": "Renacer",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una hermosa bodega de arquitectura toscana destacada por sus vinos elaborados con la técnica de appassimento y sus relajantes visitas rodeadas de jardines y una laguna.",
+                "imagenA": "renacer_A.jpg",
+                "imagenB": "renacer_B.jpg"
+            },
+            {
+                "nombre": "Lagarde",
+                "latitud": "-33.0232799",
+                "longitud": "-68.8725847",
+                "descripcion": "Es una bodega de espíritu centenario muy elogiada por su exquisito restaurante Zonda y sus almuerzos bajo viñedos antiguos que maridan a la perfección con sus clásicos vinos.",
+                "imagenA": "lagarde_A.jpg",
+                "imagenB": "lagarde_B.jpg"
+            },
+            {
+                "nombre": "Ruca Malen",
+                "latitud": "-33.0943708",
+                "longitud": "-68.9290292",
+                "descripcion": "Es una bodega moderna que suele ser muy recomendada por su menú degustación de pasos, pionero en la región por su altísimo nivel gastronómico frente a la cordillera.",
+                "imagenA": "ruca_malen_A.jpg",
+                "imagenB": "ruca_malen_B.jpg"
+            },
+            {
+                "nombre": "Vistalba",
+                "latitud": "-33.0270986",
+                "longitud": "-68.9070565",
+                "descripcion": "Es una elegante bodega conocida por su imponente arquitectura subterránea, sus impecables vinos de corte y sus excelentes opciones de degustación al atardecer.",
+                "imagenA": "vistalba_A.jpg",
+                "imagenB": "vistalba_B.jpg"
+            },
+            {
+                "nombre": "Anaia",
+                "latitud": "-33.1813308",
+                "longitud": "-68.8912394",
+                "descripcion": "Es una bodega de vanguardia con un diseño arquitectónico sumamente moderno e innovador, famosa por sus singulares vasijas de fermentación (mates) y vistas despejadas a los Andes.",
+                "imagenA": "anaia_A.jpg",
+                "imagenB": "anaia_B.jpg"
+            },
+            {
+                "nombre": "Cruzat",
+                "latitud": "-33.075088",
+                "longitud": "-68.9242104",
+                "descripcion": "Es la única bodega de la región dedicada exclusivamente a la elaboración de espumantes bajo el método tradicional, ofreciendo catas técnicas muy valoradas por los amantes de las burbujas.",
+                "imagenA": "cruzat_A.jpg",
+                "imagenB": "cruzat_B.jpg"
+            },
+            {
+                "nombre": "Belasco Baquedano",
+                "latitud": "-33.1182775",
+                "longitud": "-68.9167739",
+                "descripcion": "Es una impresionante bodega en Agrelo que cautiva a los visitantes con su singular Sala de los Aromas interactiva y su restaurante de impronta española.",
+                "imagenA": "belasco_baquedano_A.jpg",
+                "imagenB": "belasco_baquedano_B.jpg"
+            },
+            {
+                "nombre": "Alpamanta",
+                "latitud": "-33.2354135",
+                "longitud": "-68.9334902",
+                "descripcion": "Es una moderna bodega pionera en agricultura biodinámica en Mendoza, celebrada por su diseño sustentable y su profundo respeto por el ecosistema natural de sus viñedos.",
+                "imagenA": "alpamanta_A.jpg",
+                "imagenB": "alpamanta_B.jpg"
+            },
+            {
+                "nombre": "Budeguer",
+                "latitud": "-33.1517623",
+                "longitud": "-68.8923216",
+                "descripcion": "Es una bodega moderna y elegante que destaca por su colección de arte contemporáneo, su imponente arquitectura de líneas rectas y sus vinos de gran estructura.",
+                "imagenA": "budeguer_A.jpg",
+                "imagenB": "budeguer_B.jpg"
+            },
+            {
+                "nombre": "Lamadrid",
+                "latitud": "-32.7545156",
+                "longitud": "-68.4364946",
+                "descripcion": "Es una acogedora bodega en Agrelo elogiada por sus vinos elaborados bajo la supervisión de los hermanos Durigutti y sus tranquilos almuerzos campestres con excelente atención.",
+                "imagenA": "lamadrid_A.jpg",
+                "imagenB": "lamadrid_B.jpg"
+            },
+            {
+                "nombre": "Amalia",
+                "latitud": "-33.0957092",
+                "longitud": "-68.7205601",
+                "descripcion": "Es una pintoresca bodega tradicional que suele ser muy elogiada por su trato cordial, sus vinos de perfil clásico y su ambiente tranquilo alejado del turismo masivo.",
+                "imagenA": "amalia_A.jpg",
+                "imagenB": "amalia_B.jpg"
+            },
+            {
+                "nombre": "Finca Decero",
+                "latitud": "-33.1212526",
+                "longitud": "-68.9431964",
+                "descripcion": "Es una bodega famosa por su inmaculada arquitectura, sus excelentes vinos tintos de la zona de Agrelo y sus elegantes almuerzos frente al imponente Cordón del Plata.",
+                "imagenA": "finca_decero_A.jpg",
+                "imagenB": "finca_decero_B.jpg"
+            },
+            {
+                "nombre": "Casa Chacras",
+                "latitud": "-33.0018501",
+                "longitud": "-68.8868332",
+                "descripcion": "Es un encantador espacio gastronómico en Chacras de Coria, muy recomendado por su entorno arbolado y su cocina de autor en un ambiente relajado y bohemio.",
+                "imagenA": "casa_chacras_A.jpg",
+                "imagenB": "casa_chacras_B.jpg"
+            },
+            {
+                "nombre": "Durigutti",
+                "latitud": "-33.0243561",
+                "longitud": "-68.9514284",
+                "descripcion": "Es un proyecto vitivinícola sumamente aplaudido por el talento de sus creadores y su restaurante 5 Suelos, que ofrece una propuesta culinaria excepcional en Las Compuertas.",
+                "imagenA": "durigutti_A.jpg",
+                "imagenB": "durigutti_B.jpg"
+            },
+            {
+                "nombre": "Susana Balbo",
+                "latitud": "-33.1154107",
+                "longitud": "-68.9030964",
+                "descripcion": "Es la prestigiosa bodega de la primera enóloga argentina, celebrada mundialmente por sus vinos blancos de alta gama y sus excelentes restaurantes Osadía de Crear y Vida.",
+                "imagenA": "susana_balbo_A.jpg",
+                "imagenB": "susana_balbo_B.jpg"
+            },
+            {
+                "nombre": "Kaiken",
+                "latitud": "-33.0400625",
+                "longitud": "-68.937163",
+                "descripcion": "Es una bodega con una propuesta turística muy atractiva que incluye viñedos biodinámicos y la exitosa gastronomía de Ramos Generales, a cargo del chef Francis Mallmann.",
+                "imagenA": "kaiken_A.jpg",
+                "imagenB": "kaiken_B.jpg"
+            },
+            {
+                "nombre": "Penedo Borges",
+                "latitud": "-33.0949371",
+                "longitud": "-68.9671325",
+                "descripcion": "Es una bodega boutique en Alto Agrelo que ofrece una excelente relación calidad-precio en sus vinos y una cálida atención en un entorno con inmejorables vistas.",
+                "imagenA": "penedo_borges_A.jpg",
+                "imagenB": "penedo_borges_B.jpg"
+            },
+            {
+                "nombre": "Finca La Anita",
+                "latitud": "-33.1728809",
+                "longitud": "-68.9199146",
+                "descripcion": ": Es una histórica bodega pionera en vinos de alta gama, valorada por su ambiente íntimo, sus viñedos añosos y sus exclusivas y relajadas degustaciones al aire libre.",
+                "imagenA": "finca_la_anita_A.jpg",
+                "imagenB": "finca_la_anita_B.jpg"
+            },
+            {
+                "nombre": "Sottano",
+                "latitud": "44.4121656",
+                "longitud": "7.4856444",
+                "descripcion": "Es una bodega muy pintoresca a los pies de la montaña, recomendada por sus exquisitos Malbec y Cabernet Franc, además de sus completas y entretenidas visitas guiadas.",
+                "imagenA": "sottano_A.jpg",
+                "imagenB": "sottano_B.jpg"
+            },
+            {
+                "nombre": "Viña Cobos",
+                "latitud": "-33.0953799",
+                "longitud": "-68.9263618",
+                "descripcion": "Es la bodega del prestigioso enólogo Paul Hobbs, un auténtico templo para los conocedores que ofrece algunas de las catas técnicas más exclusivas de Mendoza.Es una bodega tradicional conocida por su enología artesanal y sus vinos de perfil clásico, ideal para degustaciones en un entorno natural y tranquilo.",
+                "imagenA": "vina_cobos_A.jpg",
+                "imagenB": "vina_cobos_B.jpg"
+            },
+            {
+                "nombre": "Piatelli",
+                "latitud": "-33.1707848",
+                "longitud": "-68.9198186",
+                "descripcion": "Es una bodega de imponente arquitectura que maravilla a los visitantes con sus jardines perfectamente cuidados y un restaurante que ofrece menús abundantes y deliciosos.",
+                "imagenA": "piatelli_A.jpg",
+                "imagenB": "piatelli_B.jpg"
+            },
+            {
+                "nombre": "Doña Paula",
+                "latitud": "-33.2513743",
+                "longitud": "-69.0505599",
+                "descripcion": "Es una bodega reconocida por la consistencia y calidad de sus vinos, ofreciendo catas personalizadas que permiten entender a fondo la diversidad de los suelos mendocinos.",
+                "imagenA": "dona_paula_A.jpg",
+                "imagenB": "dona_paula_B.jpg"
+            },
+            {
+                "nombre": "Las Perdices",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una bodega muy popular en Agrelo por su amplia variedad de cepas innovadoras, sus deliciosos aceites de oliva y sus relajados almuerzos tipo picnic entre los viñedos.",
+                "imagenA": "las_perdices_A.jpg",
+                "imagenB": "las_perdices_B.jpg"
+            },
+            {
+                "nombre": "Tierras de los Andes",
+                "latitud": "-32.8664671",
+                "longitud": "-68.8646718",
+                "descripcion": "Es un proyecto vitivinícola muy valorado por sus degustaciones cercanas y didácticas, donde resalta la identidad pura y la expresión del terruño andino.",
+                "imagenA": "tierras_de_los_andes_A.jpg",
+                "imagenB": "tierras_de_los_andes_B.jpg"
+            },
+            {
+                "nombre": "Chakana",
+                "latitud": "-33.1755617",
+                "longitud": "-68.9251847",
+                "descripcion": "Es una bodega orgánica muy elogiada por sus vinos honestos y respetuosos con el medio ambiente, destacando en sus visitas el contacto directo con la filosofía sustentable.",
+                "imagenA": "chakana_A.jpg",
+                "imagenB": "chakana_B.jpg"
+            },
+            {
+                "nombre": "Maal Wines",
+                "latitud": "-32.9806024",
+                "longitud": "-68.8662134",
+                "descripcion": "Es una bodega de diseño industrial y disruptivo construida con chatarra reciclada, famosa por elaborar exclusivamente Malbecs con un enfoque sumamente divertido y original.",
+                "imagenA": "maal_wines_A.jpg",
+                "imagenB": "maal_wines_B.jpg"
+            },
+            {
+                "nombre": "Las Touza",
+                "latitud": "-33.0224228",
+                "longitud": "-68.9364275",
+                "descripcion": "Es una acogedora bodega donde los visitantes se sienten como en casa, destacándose por sus empanadas caseras, su trato familiar y su genuino ambiente tradicional.",
+                "imagenA": "las_touza_A.jpg",
+                "imagenB": "las_touza_B.jpg"
+            }
+        ],
+        "maipu_bodegas": [
+            {
+                "nombre": "Atilio Avena",
+                "latitud": "-32.8927081",
+                "longitud": "-68.777035",
+                "descripcion": "Es una bodega de arraigada tradición familiar en Maipú que se destaca por sus vinos clásicos y una atención cálida que hace sentir al visitante como en casa.",
+                "imagenA": "atilio_avena_A.jpg",
+                "imagenB": "atilio_avena_B.jpg"
+            },
+            {
+                "nombre": "Bodega Argentia",
+                "latitud": "-32.9650338",
+                "longitud": "-68.7795599",
+                "descripcion": "Es un establecimiento ideal para conocer la historia vitivinícola maipucina, valorado por sus viñedos antiguos y sus degustaciones íntimas.",
+                "imagenA": "bodega_argentia_A.jpg",
+                "imagenB": "bodega_argentia_B.jpg"
+            },
+            {
+                "nombre": "Domiciano",
+                "latitud": "-32.9650338",
+                "longitud": "-68.7795599",
+                "descripcion": "Es famosa por su singular cosecha nocturna bajo las estrellas, logrando elaborar vinos muy expresivos y de gran frescura aromática.",
+                "imagenA": "domiciano_A.jpg",
+                "imagenB": "domiciano_B.jpg"
+            },
+            {
+                "nombre": "Tempus Alba",
+                "latitud": "-33.0018838",
+                "longitud": "-68.7514052",
+                "descripcion": "Es destacada por su innovación tecnológica y clonación de vides, ofreciendo una excelente visita autoguiada que culmina en una terraza panorámica.",
+                "imagenA": "tempus_alba_A.jpg",
+                "imagenB": "tempus_alba_B.jpg"
+            },
+            {
+                "nombre": "Bodegas López",
+                "latitud": "-32.9626176",
+                "longitud": "-68.7841941",
+                "descripcion": "Es un ícono de la vitivinicultura clásica argentina, célebre por el largo añejamiento de sus vinos en grandes toneles de roble y su tradicional restaurante.",
+                "imagenA": "bodegas_lopez_A.jpg",
+                "imagenB": "bodegas_lopez_B.jpg"
+            },
+            {
+                "nombre": "La Rural",
+                "latitud": "-32.9565972",
+                "longitud": "-68.744767",
+                "descripcion": "Es una visita obligada por albergar el espectacular Museo del Vino, que permite un viaje en el tiempo a través de las maquinarias pioneras de la región.",
+                "imagenA": "la_rural_A.jpg",
+                "imagenB": "la_rural_B.jpg"
+            },
+            {
+                "nombre": "Trapiche",
+                "latitud": "32.9727533",
+                "longitud": "-68.7459872",
+                "descripcion": "Es una de las bodegas más imponentes y premiadas del país, que deslumbra con su arquitectura renacentista, su enfoque biodinámico y una gastronomía de alto nivel.",
+                "imagenA": "trapiche_A.jpg",
+                "imagenB": "trapiche_B.jpg"
+            },
+            {
+                "nombre": "Finca El Paraíso",
+                "latitud": "-33.0499397",
+                "longitud": "-68.6802692",
+                "descripcion": "Es la histórica y elegante finca de la familia Arizu en Maipú, célebre por su imponente casona estilo château y sus exclusivas degustaciones al aire libre bajo arboledas centenarias.",
+                "imagenA": "finca_el_paraiso_A.jpg",
+                "imagenB": "finca_el_paraiso_B.jpg"
+            },
+            {
+                "nombre": "Vistandes",
+                "latitud": "-33.0247576",
+                "longitud": "-68.8491631",
+                "descripcion": "Es una bodega en Cruz de Piedra con una arquitectura de grandes ventanales que ofrece hermosas vistas a la montaña, ideal para disfrutar de almuerzos relajados y vinos frescos.",
+                "imagenA": "vistandes_A.jpg",
+                "imagenB": "vistandes_B.jpg"
+            },
+            {
+                "nombre": "Casa Corbel",
+                "latitud": "-33.0278614",
+                "longitud": "-68.774636",
+                "descripcion": "Es un proyecto vitivinícola boutique sumamente acogedor donde los visitantes destacan la atención personalizada de sus propios dueños y la calidad artesanal de sus partidas limitadas.",
+                "imagenA": "casa_corbel_A.jpg",
+                "imagenB": "casa_corbel_B.jpg"
+            },
+            {
+                "nombre": "Bombal",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una bodega histórica de gran legado familiar que invita a conectarse con las raíces de la vitivinicultura mendocina a través de sus viñedos antiguos y vinos de estilo clásico.",
+                "imagenA": "bombal_A.jpg",
+                "imagenB": "bombal_B.jpg"
+            },
+            {
+                "nombre": "Santa Julia",
+                "latitud": "-32.9697749",
+                "longitud": "-68.5667147",
+                "descripcion": "Es un referente indiscutido en enoturismo sustentable y vinos orgánicos, ofreciendo experiencias muy completas y divertidas que van desde paseos en bicicleta hasta excelentes almuerzos campestres.",
+                "imagenA": "santa_julia_A.jpg",
+                "imagenB": "santa_julia_B.jpg"
+            },
+            {
+                "nombre": "Alandes",
+                "latitud": "-32.965632",
+                "longitud": "-68.741641",
+                "descripcion": "Es el elogiado proyecto del enólogo Karim Mussi alojado en una casona centenaria restaurada en Maipú, enfocado exclusivamente en la elaboración de excepcionales vinos de corte.",
+                "imagenA": "alandes_A.jpg",
+                "imagenB": "alandes_B.jpg"
+            },
+            {
+                "nombre": "Esencia 1870",
+                "latitud": "-33.0162661",
+                "longitud": "-68.7590471",
+                "descripcion": "Es un espacio íntimo y tradicional que rinde homenaje a los orígenes del vino en la provincia, destacándose por un trato muy cordial y degustaciones relajadas.",
+                "imagenA": "esencia_1870_A.jpg",
+                "imagenB": "esencia_1870_B.jpg"
+            },
+            {
+                "nombre": "Agostino",
+                "latitud": "-33.103896",
+                "longitud": "-68.670994",
+                "descripcion": "Es una majestuosa bodega en la zona de Barrancas que deslumbra con su impecable paisajismo, su sofisticado restaurante y la estructura elegante de sus vinos de terruño.",
+                "imagenA": "agostino_A.jpg",
+                "imagenB": "agostino_B.jpg"
+            },
+            {
+                "nombre": "Ricardo Santos",
+                "latitud": "-33.008771",
+                "longitud": "-68.813338",
+                "descripcion": "Es la emblemática bodega familiar del pionero en la exportación del Malbec argentino, un lugar cargado de historia donde se prueban vinos que son un fiel reflejo de la cepa insignia.",
+                "imagenA": "ricardo_santos_A.jpg",
+                "imagenB": "ricardo_santos_B.jpg"
+            },
+            {
+                "nombre": "Argento",
+                "latitud": "-34.5869034",
+                "longitud": "-68.1431414",
+                "descripcion": "Es una bodega moderna líder en la producción orgánica en Argentina, valorada por su inmenso respeto por el medio ambiente y sus vinos puros que expresan la fruta vibrante de Mendoza.",
+                "imagenA": "argento_A.jpg",
+                "imagenB": "argento_B.jpg"
+            },
+            {
+                "nombre": "Sinfín",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una bodega familiar de arquitectura contemporánea muy elogiada por su propuesta enoturística que fusiona arte, excelente atención y una destacada degustación de vinos de autor.",
+                "imagenA": "sinfin_A.jpg",
+                "imagenB": "sinfin_B.jpg"
+            },
+            {
+                "nombre": "Antigal",
+                "latitud": "-33.007113",
+                "longitud": "-68.807137",
+                "descripcion": "",
+                "imagenA": "antigal_A.jpg",
+                "imagenB": "antigal_B.jpg"
+            }
+        ],
+        "valle_de_uco__(bodegas)": [
+            {
+                "nombre": "Corazón del Sol",
+                "latitud": "-33.6012548",
+                "longitud": "-69.2287596",
+                "descripcion": "Es una bodega boutique en Los Chacayes muy valorada por sus vinos de mínima intervención que expresan la pureza y mineralidad del terruño pedregoso.",
+                "imagenA": "corazon_del_sol_A.jpg",
+                "imagenB": "corazon_del_sol_B.jpg"
+            },
+            {
+                "nombre": "Solo contigo",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un espacio moderno con espíritu de galería de arte, ideal para degustar pequeñas producciones de autor con atención sumamente personalizada.",
+                "imagenA": "solo_contigo_A.jpg",
+                "imagenB": "solo_contigo_B.jpg"
+            },
+            {
+                "nombre": "Gimenez Riili",
+                "latitud": "-33.6037151",
+                "longitud": "-69.2202601",
+                "descripcion": "Es reconocida por su excepcional hospitalidad, donde las degustaciones se combinan a la perfección con la gastronomía local frente a la cordillera.",
+                "imagenA": "gimenez_riili_A.jpg",
+                "imagenB": "gimenez_riili_B.jpg"
+            },
+            {
+                "nombre": "Superuco",
+                "latitud": "-33.6035033",
+                "longitud": "-69.2286951",
+                "descripcion": "Es un proyecto biodinámico de arquitectura circular donde los hermanos Michelini elaboran vinos vibrantes y naturales en completa armonía con el entorno.",
+                "imagenA": "superuco_A.jpg",
+                "imagenB": "superuco_B.jpg"
+            },
+            {
+                "nombre": "Alpasión",
+                "latitud": "-33.6069351",
+                "longitud": "-69.2795833",
+                "descripcion": "Es un exclusivo lodge y bodega sustentable que combina vistas inigualables de los Andes con vinos premium y una experiencia integral de lujo.",
+                "imagenA": "alpasion_A.jpg",
+                "imagenB": "alpasion_B.jpg"
+            },
+            {
+                "nombre": "Enzo Bianchi",
+                "latitud": "-33.6098159",
+                "longitud": "-69.1791477",
+                "descripcion": "Es la sede de alta gama de la familia Bianchi en Valle de Uco, destacada por sus instalaciones de vanguardia pensadas para grandes vinos de guarda.",
+                "imagenA": "enzo_bianchi_A.jpg",
+                "imagenB": "enzo_bianchi_B.jpg"
+            },
+            {
+                "nombre": "La Azul",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una pequeña y acogedora bodega a los pies del Cordón del Plata, famosa por su trato cercano y sus imperdibles almuerzos desestructurados de pasos.",
+                "imagenA": "la_azul_A.jpg",
+                "imagenB": "la_azul_B.jpg"
+            },
+            {
+                "nombre": "Adelma",
+                "latitud": "-33.4680766",
+                "longitud": "-69.2179509",
+                "descripcion": "Es una bodega boutique en Tupungato muy apreciada por su entorno íntimo y la elaboración artesanal de vinos de partidas limitadas con gran atención al detalle.",
+                "imagenA": "adelma_A.jpg",
+                "imagenB": "adelma_B.jpg"
+            },
+            {
+                "nombre": "Domaine Bousquet",
+                "latitud": "-33.43283",
+                "longitud": "-69.1923705",
+                "descripcion": "Es la bodega pionera y líder en exportación de vinos orgánicos del país, destacada por su restaurante Gaia y su profundo compromiso con la sustentabilidad.",
+                "imagenA": "domaine_bousquet_A.jpg",
+                "imagenB": "domaine_bousquet_B.jpg"
+            },
+            {
+                "nombre": "Piedra Infinita",
+                "latitud": "-33.7723242",
+                "longitud": "-69.1568529",
+                "descripcion": "Es la majestuosa bodega de la familia Zuccardi en Paraje Altamira, premiada como la mejor del mundo y famosa por su impactante arquitectura de piedra integrada a la montaña.",
+                "imagenA": "piedra_infinita_A.jpg",
+                "imagenB": "piedra_infinita_B.jpg"
+            },
+            {
+                "nombre": "Alfa Crux",
+                "latitud": "-33.7988024",
+                "longitud": "-69.1174321",
+                "descripcion": "Es una bodega fascinante por su imponente diseño futurista en El Cepillo, que ofrece vinos excepcionales y una experiencia gastronómica de alta gama.",
+                "imagenA": "alfa_crux_A.jpg",
+                "imagenB": "alfa_crux_B.jpg"
+            },
+            {
+                "nombre": "Monteviejo",
+                "latitud": "-34.5869034",
+                "longitud": "-68.1431414",
+                "descripcion": "Es una prestigiosa bodega dentro del Clos de los 7, conocida internacionalmente por combinar la elaboración de excelentes vinos de autor con la pasión por el rock.",
+                "imagenA": "monteviejo_A.jpg",
+                "imagenB": "monteviejo_B.jpg"
+            },
+            {
+                "nombre": "Diamandes",
+                "latitud": "-33.667072",
+                "longitud": "-69.194403",
+                "descripcion": "Es una impresionante bodega de dueños franceses que deslumbra con su cripta subterránea circular y sus elegantes vinos de corte al estilo bordelés.",
+                "imagenA": "diamandes_A.jpg",
+                "imagenB": "diamandes_B.jpg"
+            },
+            {
+                "nombre": "Michel Rolland",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es el elogiado proyecto personal del afamado enólogo francés homónimo, donde elabora de forma meticulosa vinos de altísima gama y expresión inconfundible.",
+                "imagenA": "michel_rolland_A.jpg",
+                "imagenB": "michel_rolland_B.jpg"
+            },
+            {
+                "nombre": "Masi",
+                "latitud": "-32.9804109",
+                "longitud": "-68.7992877",
+                "descripcion": "Es una singular bodega que fusiona la identidad local con la tradición italiana, siendo pionera en utilizar la técnica del secado de uvas (appassimento) en Mendoza.",
+                "imagenA": "masi_A.jpg",
+                "imagenB": "masi_B.jpg"
+            },
+            {
+                "nombre": "Tikal",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un proyecto vitivinícola con una fuerte conexión espiritual, célebre por sus originales viñedos en forma de laberinto y sus prácticas biodinámicas y naturales.",
+                "imagenA": "tikal_A.jpg",
+                "imagenB": "tikal_B.jpg"
+            },
+            {
+                "nombre": "Michelini Muffato",
+                "latitud": "-34.5869034",
+                "longitud": "-68.1431414",
+                "descripcion": "Es una bodega familiar boutique enfocada en la elaboración purista de vinos de terroir que buscan expresar la esencia más cruda y tensa del paisaje andino.",
+                "imagenA": "michelini_muffato_A.jpg",
+                "imagenB": "michelini_muffato_B.jpg"
+            },
+            {
+                "nombre": "Andeluna",
+                "latitud": "-33.455505",
+                "longitud": "-69.21215",
+                "descripcion": "Es un destino sumamente popular en Tupungato, famoso por sus concurridos atardeceres mágicos (Tardecitas) acompañados de vinos, música y vistas al volcán.",
+                "imagenA": "andeluna_A.jpg",
+                "imagenB": "andeluna_B.jpg"
+            },
+            {
+                "nombre": "Salentein",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es la bodega pionera y monumental del Valle de Uco, reconocida por su espectacular cava subterránea con acústica de anfiteatro y su gran galería de arte Killka.",
+                "imagenA": "salentein_A.jpg",
+                "imagenB": "salentein_B.jpg"
+            },
+            {
+                "nombre": "Atamisque",
+                "latitud": "-33.2811902",
+                "longitud": "-69.1433057",
+                "descripcion": "Es una exclusiva finca que ofrece una experiencia de lujo relajado, combinando una bodega de techos de laja, un restaurante famoso por sus truchas frescas y excelentes vinos blancos y tintos.",
+                "imagenA": "atamisque_A.jpg",
+                "imagenB": "atamisque_B.jpg"
+            },
+            {
+                "nombre": "Zorzal",
+                "latitud": "-33.42123351",
+                "longitud": "-69.252715",
+                "descripcion": "Es la bodega innovadora de Gualtallary que revolucionó la enología local al ser pionera en el uso de huevos de cemento para lograr vinos eléctricos y vibrantes.",
+                "imagenA": "zorzal_A.jpg",
+                "imagenB": "zorzal_B.jpg"
+            },
+            {
+                "nombre": "La Vigilia",
+                "latitud": "-33.6040781",
+                "longitud": "-69.2246768",
+                "descripcion": "Es un cuidado emprendimiento vitivinícola muy valorado por sus partidas pequeñas de vinos de autor y su ambiente apacible al pie de la cordillera.",
+                "imagenA": "la_vigilia_A.jpg",
+                "imagenB": "la_vigilia_B.jpg"
+            },
+            {
+                "nombre": "Clos de los 7",
+                "latitud": "-33.6670189",
+                "longitud": "-69.194246",
+                "descripcion": "Es un imponente predio ideado por Michel Rolland que agrupa a varias bodegas francesas independientes en un solo lugar, unidas para potenciar las mejores características de la región.",
+                "imagenA": "clos_de_los_7_A.jpg",
+                "imagenB": "clos_de_los_7_B.jpg"
+            },
+            {
+                "nombre": "Claro oscuro",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una original bodega de arte donde la enología se cruza con la cultura visual, ya que cada etiqueta de sus ricos vinos promueve la obra de un artista argentino.",
+                "imagenA": "claro_oscuro_A.jpg",
+                "imagenB": "claro_oscuro_B.jpg"
+            },
+            {
+                "nombre": "Sophenia",
+                "latitud": "-33.4618197",
+                "longitud": "-69.2168458",
+                "descripcion": "Es una destacada finca pionera en la prestigiosa zona de Gualtallary, productora de vinos de altura sumamente elegantes que han sido premiados a nivel global.",
+                "imagenA": "sophenia_A.jpg",
+                "imagenB": "sophenia_B.jpg"
+            },
+            {
+                "nombre": "Huarpes Riglos",
+                "latitud": "-33.1543023",
+                "longitud": "-68.8915461",
+                "descripcion": "Es la exitosa unión de dos proyectos que resulta en vinos de excelencia, logrando expresar con muchísimo carácter los exigentes terruños de Gualtallary y Agrelo.",
+                "imagenA": "huarpes_riglos_A.jpg",
+                "imagenB": "huarpes_riglos_B.jpg"
+            },
+            {
+                "nombre": "Piedra Negra",
+                "latitud": "-33.6091548",
+                "longitud": "-69.2039125",
+                "descripcion": "Es la bodega del francés François Lurton que descubrió el enorme potencial de la indicación geográfica Los Chacayes, famosa por su manejo orgánico y la frescura de su Pinot Gris",
+                "imagenA": "piedra_negra_A.jpg",
+                "imagenB": "piedra_negra_B.jpg"
+            },
+            {
+                "nombre": "Cuvelier de los Andes",
+                "latitud": "-33.6660788",
+                "longitud": "-69.2223581",
+                "descripcion": "Es una prestigiosa bodega de tradición francesa que elabora excepcionales vinos de guarda, combinando la filosofía de Burdeos con la potencia del Malbec mendocino.",
+                "imagenA": "cuvelier_de_los_andes_A.jpg",
+                "imagenB": "cuvelier_de_los_andes_B.jpg"
+            },
+            {
+                "nombre": "Setebos",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un proyecto de partidas limitadas que cautiva a los conocedores que buscan vinos genuinos, de intervención mínima y con la fuerte personalidad del suelo pedregoso.",
+                "imagenA": "setebos_A.jpg",
+                "imagenB": "setebos_B.jpg"
+            },
+            {
+                "nombre": "Finca del Nunca Jamás",
+                "latitud": "-33.6046579",
+                "longitud": "-69.1232488",
+                "descripcion": "Es un emprendimiento turístico y vitivinícola con espíritu bohemio, ideal para desconectar y probar vinos naturales bajo el relajado concepto de un pueblo de vino.",
+                "imagenA": "finca_del_nunca_jamas_A.jpg",
+                "imagenB": "finca_del_nunca_jamas_B.jpg"
+            }
+        ],
+        "olivicolas": [
+            {
+                "nombre": "Laur",
+                "latitud": "-33.033086",
+                "longitud": "-68.7698543",
+                "descripcion": "Es distinguida internacionalmente como la olivícola número uno del mundo, ofreciendo un recorrido fascinante para degustar aceites y acetos de calidad superior.",
+                "imagenA": "laur_A.jpg",
+                "imagenB": "laur_B.jpg"
+            },
+            {
+                "nombre": "Pasrai",
+                "latitud": "-25.4998519",
+                "longitud": "-79.0108212",
+                "descripcion": "Es un establecimiento familiar muy apreciado por la extracción artesanal de su aceite de oliva virgen extra y la cálida degustación de sus pastas y conservas.",
+                "imagenA": "pasrai_A.jpg",
+                "imagenB": "pasrai_B.jpg"
+            },
+            {
+                "nombre": "Maguay",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es una finca con fuerte identidad local que permite conocer los métodos tradicionales y probar excelentes aceites con la auténtica expresión de Mendoza.",
+                "imagenA": "maguay_A.jpg",
+                "imagenB": "maguay_B.jpg"
+            },
+            {
+                "nombre": "Centenario",
+                "latitud": "-32.8894587",
+                "longitud": "-68.8458386",
+                "descripcion": "Es un espacio histórico que pone en valor los olivos centenarios de la zona, combinando legado y tecnología para lograr aceites de oliva de altísimo nivel.",
+                "imagenA": "centenario_A.jpg",
+                "imagenB": "centenario_B.jpg"
+            }
+        ]
+    }
 }

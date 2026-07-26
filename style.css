@@ -1,289 +1,1402 @@
 /* ==========================================
-   ESTILOS ROCK TRAVELS - MENDOZA
+   ESTILOS ROCK STONE TRAVELS - MENDOZA
    ========================================== */
 
 * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
 
-body, html { height: 100%; scroll-behavior: smooth; background-color: #f4f6f9; }
+/* Base de la web: Predominio de Beige Claro */
+body, html { height: 100%; scroll-behavior: smooth; background-color: #e1d5c9; color: #1b2a4a; }
 
 /* 1. SECCIÓN DE PRESENTACIÓN (HERO) */
 /* 1. SECCIÓN DE PRESENTACIÓN (HERO) */
 .hero-section {
     height: 60vh;
-    /* Se cambia la ruta a img/ux/fondo.jpg manteniendo el degradado oscuro */
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(26, 26, 26, 0.9)), 
-                url('img/ux/fondo.jpg') no-repeat center center/cover;
+    /* 1. Quitamos el "linear-gradient" para eliminar la capa oscura */
+    background: url('img/ux/IMG-20260704-WA0037.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* 2. Cambiamos 'center' por 'flex-end' para mandar el botón hacia abajo */
+    justify-content: flex-end; 
     align-items: center;
     text-align: center;
-    color: #ffffff;
-    padding: 20px;
+    /* 3. Ajustamos el padding para que el botón no quede pegado al borde inferior */
+    padding: 20px 20px 60px 20px; 
 }
 .hero-section h1 { font-size: 52px; font-weight: 800; letter-spacing: 4px; text-transform: uppercase; margin-bottom: 10px; }
-.hero-section h1 span { color: #d69e2e; } /* Dorado corporativo */
-.hero-section p { font-size: 18px; max-width: 600px; color: #e2e8f0; font-weight: 300; margin-bottom: 30px; line-height: 1.6; }
+.hero-section h1 span { color: #C3CE94; } /* Detalle en Naranja Óxido */
+.hero-section p { font-size: 18px; max-width: 600px; color: #e1d5c9; font-weight: 300; margin-bottom: 30px; line-height: 1.6; }
 
+/* Botón de Acción Principal (CTA) */
 .cta-btn {
-    background: transparent;
-    color: #ffffff;
-    border: 2px solid #d69e2e;
+    background: #C3CE94;
+    color: #1b2a4a; 
+    border: 2px solid #C3CE94;
     padding: 12px 35px;
     text-decoration: none;
-    font-weight: 600;
+    font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 2px;
     transition: all 0.4s ease;
 }
-.cta-btn:hover { background: #d69e2e; color: #000; }
+.cta-btn:hover { background: transparent; color: #ffffff; border-color: #ffffff; }
 
 /* 2. CONTENEDOR DE LA APLICACIÓN */
-.app-container { display: flex; height: 100vh; width: 100vw; background: #ffffff; border-top: 2px solid #d69e2e; }
+.app-container { display: flex; height: 100vh; width: 100vw; background: #e1d5c9; border-top: 3px solid #1b2a4a; }
 
-/* Panel Izquierdo: Categorías (Diseño Elegante) */
+/* Panel Izquierdo: Categorías (Elegante en Azul Profundo) */
 .sidebar-left { 
-    width: 320px; height: 100%; background: #1a1a1a; /* Negro corporativo */
+    width: 320px; height: 100%; background: #1b2a4a; 
     color: #ffffff;
-    box-shadow: 4px 0 15px rgba(0,0,0,0.2); z-index: 10; 
+    box-shadow: 4px 0 15px rgba(0,0,0,0.15); z-index: 10; 
     display: flex; flex-direction: column;
 }
-.sidebar-header { padding: 25px; border-bottom: 1px solid #333; }
+.sidebar-header { padding: 25px; border-bottom: 1px solid rgba(255,255,255,0.1); }
 .lang-picker select { 
     width: 100%; padding: 10px; border-radius: 4px; 
-    border: 1px solid #444; background: #262626; color: #fff; font-weight: 500; cursor: pointer;
+    border: 1px solid rgba(255,255,255,0.2); background: rgba(255,255,255,0.1); color: #fff; font-weight: 500; cursor: pointer;
 }
 .sidebar-header input:focus {
     outline: none;
-    border-color: #d69e2e; /* Borde dorado al hacer click para escribir */
+    border-color: #C3CE94; 
 }
 .categories-wrapper { flex: 1; overflow-y: auto; padding: 15px 20px; }
 .category-section { margin-bottom: 25px; }
 .category-title { 
-    font-size: 12px; font-weight: 700; color: #d69e2e; /* Dorado */
-    text-transform: uppercase; letter-spacing: 2px; margin-bottom: 12px; 
+    font-size: 12px; 
+    font-weight: 700; 
+    color: #ffffff; /* <--- Cambiado a blanco puro */
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 12px; 
 }
 .places-list { list-style: none; display: flex; flex-direction: column; gap: 8px; }
 .place-item { 
-    padding: 10px 12px; border-radius: 0; background: #262626; border-left: 3px solid #b91c1c; /* Rojo */
-    font-size: 13px; color: #e2e8f0; cursor: pointer; transition: all 0.3s;
+    padding: 10px 12px; border-radius: 4px; background: rgba(255,255,255,0.05); border-left: 3px solid #073799; 
+    font-size: 13px; color: #e1d5c9; cursor: pointer; transition: all 0.3s;
 }
-.place-item:hover { background: #333; border-left: 3px solid #d69e2e; color: #fff; }
+.place-item:hover { background: rgba(255,255,255,0.15); border-left: 3px solid #C3CE94; color: #fff; }
 
 /* Contenedor del Mapa */
 #map { flex: 1; height: 100%; z-index: 1; }
 
-/* Panel Derecho: Itinerario */
+/* Panel Derecho: Itinerario (Beige Arena) */
 .sidebar-right {
-    width: 300px; height: 100%; background: #f8f8f8;
+    width: 300px; height: 100%; background: #d4a88a; 
     box-shadow: -4px 0 15px rgba(0,0,0,0.05); z-index: 10;
     display: flex; flex-direction: column; padding: 20px;
 }
-.itinerary-title { font-size: 16px; font-weight: 700; color: #b91c1c; border-bottom: 2px solid #b91c1c; padding-bottom: 8px; margin-bottom: 15px; }
+.itinerary-title { font-size: 16px; font-weight: 700; color: #1b2a4a; border-bottom: 2px solid #1b2a4a; padding-bottom: 8px; margin-bottom: 15px; }
 .itinerary-list { list-style: none; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 8px; }
 .itinerary-item {
-    background: white; padding: 10px 12px; border-radius: 4px; border-left: 4px solid #d69e2e;
+    background: #e1d5c9; padding: 10px 12px; border-radius: 4px; border-left: 4px solid #073799;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05); display: flex; justify-content: space-between; align-items: center;
-    font-size: 13px; color: #2d3748;
+    font-size: 13px; color: #1b2a4a;
 }
-.remove-btn { background: none; border: none; color: #b91c1c; font-size: 16px; cursor: pointer; font-weight: bold; }
+.remove-btn { background: none; border: none; color: #1b2a4a; font-size: 16px; cursor: pointer; font-weight: bold; opacity: 0.7; }
+.remove-btn:hover { opacity: 1; color: #073799; }
 
-/* 3. POPUPS Y COLORES */
-.add-itinerary-btn { background: #b91c1c; color: white; border: none; width: 26px; height: 26px; border-radius: 50%; cursor: pointer; }
-.popup-title { font-size: 15px; font-weight: 700; color: #1a1a1a; }
-.popup-gallery img { width: 120px; height: 85px; object-fit: cover; border-radius: 2px; }
+/* 3. POPUPS Y INTERACCIONES */
+.add-itinerary-btn { background: #073799; color: white; border: none; width: 26px; height: 26px; border-radius: 50%; cursor: pointer; transition: background 0.2s; }
+.add-itinerary-btn:hover { background: #1b2a4a; }
+.popup-title { font-size: 15px; font-weight: 700; color: #1b2a4a; }
+.popup-gallery img { width: 120px; height: 85px; object-fit: cover; border-radius: 4px; }
 
-/* Paleta de colores aplicada a clases */
-.color-puntos { color: #3182ce; } .color-hoteles { color: #805ad5; }
-.color-restaurantes { color: #b91c1c; } .color-alta-montana { color: #4a5568; }
-.color-lujan { color: #38a169; } .color-uco { color: #d69e2e; }
+/* Marcadores semánticos */
+.color-puntos { color: #ffffff; } 
+.color-hoteles { color: #ffffff; }
+.color-restaurantes { color: #ffffff; } 
+.color-alta-montana { color: #ffffff; }
+.color-lujan { color: #ffffff; } 
+.color-uco { color: #ffffff; }
+
 
 @media (max-width: 1024px) {
-    .app-container { 
-        flex-direction: column; 
-        height: 100vh; /* Cambiamos 'auto' a 100vh para que funcione como app a pantalla completa */
-    }
-    
-    #map { 
-        order: 1; /* El mapa aparece arriba de todo */
-        width: 100%;
-        height: 45vh; /* Ocupa casi la mitad de la pantalla */
-    }
-
-    .sidebar-left { 
-        order: 2; /* El menú de búsqueda y lugares aparece debajo del mapa */
-        width: 100%; 
-        height: 35vh; /* Altura restringida forzando el scroll interno de tu lista */
-    }
-    
-    .sidebar-right { 
-        order: 3; /* El itinerario y botón de presupuesto quedan al final */
-        width: 100%; 
-        height: 20vh; 
-    }
+    .app-container { flex-direction: column; height: 100vh; }
+    #map { order: 1; width: 100%; height: 45vh; }
+    .sidebar-left { order: 2; width: 100%; height: 35vh; }
+    .sidebar-right { order: 3; width: 100%; height: 20vh; }
 }
-/* Botón de Presupuesto - Estilo Corporativo */
+
+/* Botón de Presupuesto */
 .itinerary-footer {
     padding-top: 15px;
-    border-top: 1px solid #edf2f7;
-    margin-top: auto; /* Empuja el botón al final del contenedor */
+    border-top: 1px solid rgba(27, 42, 74, 0.1);
+    margin-top: auto;
 }
-
 .budget-btn {
     display: block;
     width: 100%;
-    background: #1a1a1a; /* Negro */
-    color: #d69e2e; /* Dorado */
+    background: #073799; 
+    color: #ffffff;
     text-align: center;
     padding: 14px;
     text-decoration: none;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    border: 2px solid #d69e2e;
+    border: 2px solid #073799;
     transition: all 0.3s ease;
     cursor: pointer;
 }
-
-.budget-btn:hover {
-    background: #d69e2e;
-    color: #1a1a1a;
-}
+.budget-btn:hover { background: transparent; color: #073799; }
 
 /* ==========================================
    PANTALLA DE LOGIN / OVERLAY
    ========================================== */
 .login-overlay {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(26, 26, 26, 0.95)), 
-                url('img/ux/fondo.jpg') no-repeat center center/cover;
-    z-index: 9999; /* Asegura que tape el mapa y los sidebars */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 0; left: 0; width: 100vw; height: 100vh;
+    /* SE ACTUALIZA LA PORTADA TAMBIÉN EN EL FONDO DEL LOGIN */
+    background: linear-gradient(rgba(27, 42, 74, 0.85), rgba(27, 42, 74, 0.98)), 
+                url('img/ux/portada.jpg') no-repeat center center/cover;
+    z-index: 9999;
+    display: flex; justify-content: center; align-items: center;
     transition: opacity 0.5s ease, visibility 0.5s ease;
 }
 
-/* Clase para ocultar el login con suavidad */
-.login-overlay.hidden {
-    opacity: 0;
-    visibility: hidden;
-}
+.login-overlay.hidden { opacity: 0; visibility: hidden; }
 
 .login-box {
-    background: #1a1a1a;
+    background: #e1d5c9;
     padding: 40px;
-    border: 2px solid #d69e2e;
+    border-radius: 8px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
     text-align: center;
     max-width: 400px;
     width: 90%;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
 }
-
-.login-box h2 {
-    color: #fff;
-    font-size: 28px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 15px;
-}
-
-.login-box h2 span { color: #d69e2e; }
-
-.login-box p {
-    color: #e2e8f0;
-    font-size: 14px;
-    margin-bottom: 20px;
-    font-weight: 300;
-}
+.login-box h2 { color: #1b2a4a; font-size: 28px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 15px; }
+.login-box h2 span { color: #073799; } 
+.login-box p { color: #1b2a4a; font-size: 14px; margin-bottom: 20px; font-weight: 400; opacity: 0.8; }
 
 .login-box input {
-    width: 100%;
-    padding: 12px;
-    border-radius: 4px;
-    border: 1px solid #444;
-    background: #262626;
-    color: #fff;
-    font-size: 14px;
-    text-align: center;
-    margin-bottom: 15px;
+    width: 100%; padding: 12px; border-radius: 4px; 
+    border: 1px solid #d4a88a; background: #ffffff; color: #1b2a4a; 
+    font-size: 14px; text-align: center; margin-bottom: 15px;
 }
-
-.login-box input:focus {
-    outline: none;
-    border-color: #d69e2e;
-}
+.login-box input:focus { outline: none; border-color: #073799; }
 
 .login-box button {
     width: 100%;
-    background: #d69e2e;
-    color: #000;
-    border: none;
-    padding: 12px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: all 0.3s ease;
+    background: #C3CE94;
+    color: #1b2a4a;
+    border: none; padding: 12px; font-weight: 700;
+    text-transform: uppercase; letter-spacing: 1px;
+    cursor: pointer; transition: all 0.3s ease;
 }
+.login-box button:hover { background: #1b2a4a; color: #ffffff; }
 
-.login-box button:hover {
-    background: #fff;
-}
-
-.error-msg {
-    color: #b91c1c;
-    font-size: 13px;
-    font-weight: 600;
-    margin-top: 15px;
-    display: none;
-}
+.error-msg { color: #b91c1c; font-size: 13px; font-weight: 600; margin-top: 15px; display: none; }
 
 /* EFECTO DE SACUDIDA (SHAKE) */
-.shake {
-    animation: shakeAnim 0.4s ease-in-out;
-}
-
+.shake { animation: shakeAnim 0.4s ease-in-out; }
 @keyframes shakeAnim {
     0%, 100% { transform: translateX(0); }
     20%, 60% { transform: translateX(-10px); }
     40%, 80% { transform: translateX(10px); }
 }
 
+.password-wrapper { position: relative; width: 100%; margin-bottom: 15px; }
+.login-box .password-wrapper input { margin-bottom: 0; padding-right: 45px; }
 
-/* Contenedor relativo para poder posicionar el botón de forma absoluta */
-.password-wrapper {
-    position: relative;
-    width: 100%;
-    margin-bottom: 15px;
-}
-
-/* El input ahora no lleva el margin-bottom porque lo tiene el wrapper */
-.login-box .password-wrapper input {
-    margin-bottom: 0;
-    padding-right: 45px; /* Espacio extra a la derecha para que el texto no tapar el ojo */
-}
-
-/* Estilo para el botón del ojito */
 .toggle-pass-btn {
+    position: absolute; right: 10px; top: 50%; transform: translateY(-50%);
+    background: none !important; border: none !important; color: #888 !important;
+    font-size: 18px; width: auto !important; padding: 5px !important; cursor: pointer; transition: color 0.2s ease;
+}
+.toggle-pass-btn:hover { color: #1b2a4a !important; }
+
+/* --- NUEVOS ESTILOS PARA ACORDEÓN Y FILTRO DE MAPA --- */
+
+/* Contenedor que alinea el título y el botón de filtro */
+.category-header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+/* Ajustes al título para que funcione como botón del acordeón */
+.category-title { 
+    font-size: 12px; 
+    font-weight: 700; 
+    color: #ffffff; /* <--- Cambiado a blanco puro */
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin-bottom: 12px; 
+}
+
+/* Icono de flechita del acordeón */
+.accordion-icon {
+    font-size: 10px;
+    color: inherit;
+    opacity: 0.8;
+}
+
+/* Estado contraído de la lista */
+.places-list {
+    transition: all 0.3s ease;
+}
+.places-list.collapsed {
+    display: none; /* Oculta la lista cuando está contraído */
+}
+
+/* Botón de filtrar en el mapa */
+.map-filter-btn {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e1d5c9;
+    border-radius: 4px;
+    padding: 4px 8px;
+    cursor: pointer;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.map-filter-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+
+/* Estado activo del botón de filtro */
+.map-filter-btn.active {
+    background: #C3CE94; /* Color acento de tu web */
+    color: #1b2a4a;
+    border-color: #C3CE94;
+    box-shadow: 0 0 8px rgba(195, 206, 148, 0.4);
+}
+/* ==========================================
+   CARRUSEL DE PROMOCIONES - HORIZONTAL
+   ========================================== */
+#promociones {
+    padding: 60px 20px;
+    background: #e1d5c9;
+    position: relative;
+}
+
+.promociones-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.promociones-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.promociones-header h2 {
+    font-size: 36px;
+    color: #1b2a4a;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.promociones-header p {
+    font-size: 18px;
+    color: #1b2a4a;
+    opacity: 0.7;
+    margin-top: 10px;
+}
+
+/* ===== CARRUSEL SPLIDE ===== */
+#carruselPromociones {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.splide__track {
+    overflow: hidden !important;
+}
+
+.splide__list {
+    display: flex !important;
+    flex-direction: row !important; /* HORIZONTAL */
+    transition: transform 0.8s ease !important;
+}
+
+.splide__slide {
+    flex: 0 0 100% !important; /* Ocupa todo el ancho */
+    min-width: 0 !important;
+    display: flex !important;
+    align-items: stretch !important;
+}
+
+.promo-card {
+    border-radius: 20px;
+    padding: 50px 40px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+    margin: 10px;
+    transition: transform 0.3s ease;
+    width: 100%;
+    flex: 1;
+}
+
+.promo-card:hover {
+    transform: scale(1.02);
+}
+
+.promo-content {
+    text-align: center;
+    max-width: 700px;
+    width: 100%;
+}
+
+.promo-badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 8px 25px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.3);
+}
+
+.promo-content h3 {
+    font-size: 36px;
+    margin: 15px 0 25px;
+    font-weight: 700;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.promo-details {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0 25px;
+    background: rgba(0,0,0,0.15);
+    padding: 20px 25px;
+    border-radius: 15px;
+    backdrop-filter: blur(5px);
+}
+
+.promo-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 17px;
+}
+
+.promo-icon {
+    font-size: 22px;
+    min-width: 35px;
+}
+
+.promo-price {
+    margin: 20px 0;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.price-label {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.price-value {
+    font-size: 42px;
+    font-weight: 800;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.2);
+}
+
+.price-note {
+    font-size: 16px;
+    opacity: 0.8;
+}
+
+.promo-code {
+    background: rgba(0,0,0,0.2);
+    padding: 10px 25px;
+    border-radius: 10px;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0 25px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.promo-btn {
+    background: white;
+    color: #333;
+    border: none;
+    padding: 14px 45px;
+    border-radius: 50px;
+    font-size: 17px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.promo-btn:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+}
+
+/* ===== FLECHAS DE NAVEGACIÓN ===== */
+.splide__arrow {
+    background: rgba(255,255,255,0.95) !important;
+    width: 55px !important;
+    height: 55px !important;
+    border-radius: 50% !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.15) !important;
+    opacity: 0.9 !important;
+    transition: all 0.3s ease !important;
+    z-index: 10 !important;
+}
+
+.splide__arrow:hover {
+    background: white !important;
+    transform: scale(1.1) !important;
+    box-shadow: 0 6px 30px rgba(0,0,0,0.25) !important;
+}
+
+.splide__arrow svg {
+    fill: #333 !important;
+    width: 24px !important;
+    height: 24px !important;
+}
+
+/* ===== INDICADORES ===== */
+.splide__pagination {
+    bottom: -35px !important;
+    position: relative !important;
+    margin-top: 20px !important;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 8px !important;
+}
+
+.splide__pagination__page {
+    background: rgba(27, 42, 74, 0.2) !important;
+    width: 14px !important;
+    height: 14px !important;
+    margin: 0 !important;
+    border: 2px solid rgba(27, 42, 74, 0.1) !important;
+    transition: all 0.3s ease !important;
+    border-radius: 50% !important;
+    cursor: pointer !important;
+}
+
+.splide__pagination__page.is-active {
+    background: #073799 !important;
+    transform: scale(1.3) !important;
+    border-color: #073799 !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    #promociones {
+        padding: 40px 15px;
+    }
+    
+    .promociones-header h2 {
+        font-size: 28px;
+    }
+    
+    .promo-card {
+        padding: 40px 30px;
+        min-height: 350px;
+    }
+    
+    .promo-content h3 {
+        font-size: 28px;
+    }
+    
+    .price-value {
+        font-size: 34px;
+    }
+}
+
+@media (max-width: 768px) {
+    #promociones {
+        padding: 30px 10px;
+    }
+    
+    .promociones-header h2 {
+        font-size: 24px;
+    }
+    
+    .promociones-header p {
+        font-size: 15px;
+    }
+    
+    .promo-card {
+        padding: 30px 20px;
+        min-height: 320px;
+        margin: 5px;
+    }
+    
+    .promo-content h3 {
+        font-size: 24px;
+        margin: 10px 0 15px;
+    }
+    
+    .price-value {
+        font-size: 30px;
+    }
+    
+    .promo-details {
+        padding: 15px;
+        margin: 15px 0;
+    }
+    
+    .promo-item {
+        font-size: 14px;
+    }
+    
+    .splide__arrow {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .splide__arrow svg {
+        width: 18px !important;
+        height: 18px !important;
+    }
+    
+    .splide__pagination__page {
+        width: 10px !important;
+        height: 10px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-content h3 {
+        font-size: 20px;
+    }
+    
+    .price-value {
+        font-size: 26px;
+    }
+    
+    .promo-btn {
+        padding: 10px 25px;
+        font-size: 14px;
+    }
+    
+    .promo-badge {
+        font-size: 11px;
+        padding: 6px 15px;
+    }
+    
+    .promo-item {
+        font-size: 13px;
+    }
+}
+
+/* ===== ANIMACIÓN DE ENTRADA ===== */
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.splide__slide {
+    animation: slideUp 0.6s ease forwards;
+}
+/* ==========================================
+   NUEVO: CARRUSEL CON IMAGEN DERECHA
+   ========================================== */
+
+/* Estilos para el contenedor del carrusel con imagen */
+.carousel-card {
+    border-radius: 16px !important;
+    overflow: hidden !important;
+    min-height: 380px;
+}
+
+.carousel-card-image {
+    background-size: cover !important;
+    background-position: center !important;
+    min-height: 350px;
+}
+
+/* Estilos para el contenido de la izquierda */
+.carousel-card-body {
+    padding: 40px !important;
+}
+
+.carousel-card-body .promo-details {
+    background: rgba(255,255,255,0.05) !important;
+    backdrop-filter: none !important;
+    margin: 0 0 20px 0 !important;
+    text-align: left !important;
+    padding: 15px 20px !important;
+    border-radius: 10px !important;
+}
+
+.carousel-card-body .promo-item {
+    color: #e1d5c9 !important;
+    font-size: 15px !important;
+}
+
+.carousel-card-body .promo-price {
+    justify-content: flex-start !important;
+    margin: 10px 0 !important;
+}
+
+.carousel-card-body .promo-code {
+    align-self: flex-start !important;
+    margin: 15px 0 25px 0 !important;
+    background: rgba(255,255,255,0.1) !important;
+    border: 1px solid rgba(255,255,255,0.15) !important;
+    color: #e1d5c9 !important;
+}
+
+.carousel-card-body .promo-btn {
+    align-self: flex-start !important;
+}
+
+/* ===== RESPONSIVE: EN MÓVIL LA IMAGEN ARRIBA ===== */
+@media (max-width: 768px) {
+    .carousel-card {
+        flex-direction: column !important;
+    }
+    
+    .carousel-card-image {
+        min-height: 200px !important;
+        width: 100% !important;
+        order: -1; /* Imagen arriba en móvil */
+    }
+    
+    .carousel-card-body {
+        padding: 25px !important;
+    }
+    
+    .carousel-card-body h3 {
+        font-size: 24px !important;
+    }
+    
+    .carousel-card-body .price-value {
+        font-size: 30px !important;
+    }
+    
+    .carousel-card-body .promo-details {
+        padding: 12px 15px !important;
+    }
+    
+    .carousel-card-body .promo-item {
+        font-size: 14px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-card-image {
+        min-height: 160px !important;
+    }
+    
+    .carousel-card-body {
+        padding: 20px !important;
+    }
+    
+    .carousel-card-body h3 {
+        font-size: 20px !important;
+    }
+    
+    .carousel-card-body .price-value {
+        font-size: 26px !important;
+    }
+    
+    .carousel-card-body .promo-btn {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+    }
+}
+/* ==========================================
+   TARJETAS A PANTALLA COMPLETA
+   ========================================== */
+
+/* Contenedor principal - sin padding lateral */
+.main-carousel-wrapper {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 30px 0 !important;  /* Sin padding lateral */
+    margin: 0 !important;
+    background: #e1d5c9;
+    overflow: hidden !important;
+}
+
+/* Contenedor del carrusel ocupa todo el ancho */
+#card-carousel {
+    width: 100% !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* El track del carrusel ocupa todo */
+.splide__track {
+    border-radius: 0 !important;
+    overflow: hidden !important;
+}
+
+/* Cada tarjeta ocupa el 100% del ancho */
+.carousel-card {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-height: 480px !important;  /* Más alto */
+    border-radius: 0 !important;   /* Sin bordes redondeados */
+    margin: 0 !important;
+}
+
+/* La imagen ocupa su parte proporcional */
+.carousel-card-image {
+    flex: 2 !important;
+    min-height: 480px !important;  /* Igual que la tarjeta */
+    min-width: 450px !important;
+    background-size: cover !important;
+    background-position: center !important;
+}
+
+/* La información se ajusta */
+.carousel-card-body {
+    flex: 1 !important;
+    padding: 50px 45px !important;
+    min-width: 300px !important;
+}
+
+/* Títulos más grandes */
+.carousel-card-body h3 {
+    font-size: 34px !important;
+    margin: 15px 0 25px !important;
+}
+
+/* Precio más grande */
+.carousel-card-body .price-value {
+    font-size: 40px !important;
+}
+
+/* Detalles más grandes */
+.carousel-card-body .promo-item {
+    font-size: 16px !important;
+}
+
+/* Botón más grande */
+.carousel-card-body .promo-btn {
+    padding: 16px 40px !important;
+    font-size: 17px !important;
+}
+
+/* Badge más grande */
+.carousel-card-body .promo-badge {
+    font-size: 15px !important;
+    padding: 10px 30px !important;
+}
+
+/* Flechas de navegación más grandes y visibles */
+.splide__arrow {
+    width: 60px !important;
+    height: 60px !important;
+    background: rgba(255,255,255,0.95) !important;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2) !important;
+}
+
+.splide__arrow svg {
+    width: 28px !important;
+    height: 28px !important;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .carousel-card {
+        min-height: 400px !important;
+    }
+    
+    .carousel-card-image {
+        min-height: 400px !important;
+        flex: 1.5 !important;
+        min-width: 300px !important;
+    }
+    
+    .carousel-card-body {
+        padding: 35px 30px !important;
+    }
+    
+    .carousel-card-body h3 {
+        font-size: 28px !important;
+    }
+    
+    .carousel-card-body .price-value {
+        font-size: 34px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    /* En móvil, la imagen arriba y todo ocupa el ancho */
+    .carousel-card {
+        flex-direction: column !important;
+        min-height: auto !important;
+        border-radius: 0 !important;
+    }
+    
+    .carousel-card-image {
+        flex: none !important;
+        width: 100% !important;
+        min-height: 250px !important;
+        min-width: auto !important;
+        order: -1 !important;
+    }
+    
+    .carousel-card-body {
+        flex: none !important;
+        width: 100% !important;
+        padding: 25px 20px !important;
+        min-width: auto !important;
+    }
+    
+    .carousel-card-body h3 {
+        font-size: 24px !important;
+    }
+    
+    .carousel-card-body .price-value {
+        font-size: 30px !important;
+    }
+    
+    .carousel-card-body .promo-item {
+        font-size: 14px !important;
+    }
+    
+    .carousel-card-body .promo-btn {
+        padding: 12px 30px !important;
+        font-size: 15px !important;
+        width: 100% !important;
+        text-align: center !important;
+    }
+    
+    .splide__arrow {
+        width: 40px !important;
+        height: 40px !important;
+    }
+    
+    .splide__arrow svg {
+        width: 18px !important;
+        height: 18px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .carousel-card-image {
+        min-height: 200px !important;
+    }
+    
+    .carousel-card-body {
+        padding: 20px 15px !important;
+    }
+    
+    .carousel-card-body h3 {
+        font-size: 20px !important;
+    }
+    
+    .carousel-card-body .price-value {
+        font-size: 26px !important;
+    }
+    
+    .carousel-card-body .promo-btn {
+        padding: 10px 20px !important;
+        font-size: 14px !important;
+    }
+}
+/* ==========================================
+   BOTÓN DE EXPLORAR - ENTRE PORTADA Y CARRUSEL
+   ========================================== */
+
+/* Contenedor del botón */
+.cta-banner {
+    width: 100%;
+    padding: 25px 20px;
+    background: linear-gradient(135deg, #1b2a4a 0%, #2c3e6e 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 5;
+}
+
+/* ===== BOTÓN PRINCIPAL ===== */
+.cta-btn {
+    display: inline-block;
+    padding: 20px 60px;
+    background: #C3CE94;
+    color: #1b2a4a;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-decoration: none;
+    border: 3px solid #C3CE94;
+    border-radius: 50px;
+    box-shadow: 0 8px 30px rgba(195, 206, 148, 0.3);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+    min-width: 300px;
+    text-align: center;
+}
+
+/* ===== ANIMACIONES ===== */
+
+/* ANIMACIÓN 1: PULSO (LATIDO) - RECOMENDADA */
+.cta-btn {
+    animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 8px 30px rgba(195, 206, 148, 0.3);
+    }
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 12px 40px rgba(195, 206, 148, 0.6);
+    }
+    100% {
+        transform: scale(1);
+        box-shadow: 0 8px 30px rgba(195, 206, 148, 0.3);
+    }
+}
+
+/* Efecto hover - detiene la animación y cambia colores */
+.cta-btn:hover {
+    animation: none !important;
+    transform: scale(1.1) !important;
+    background: transparent;
+    color: #ffffff;
+    border-color: #C3CE94;
+    box-shadow: 0 12px 45px rgba(195, 206, 148, 0.4);
+}
+
+/* ===== EFECTO DE ONDA (RIBBLE) AL PASAR EL MOUSE ===== */
+.cta-btn::before {
+    content: '';
     position: absolute;
-    right: 10px;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.8s ease;
+}
+
+.cta-btn:hover::before {
+    left: 100%;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+    .cta-banner {
+        padding: 20px 15px;
+    }
+    
+    .cta-btn {
+        padding: 18px 50px;
+        font-size: 20px;
+        min-width: 260px;
+    }
+}
+
+@media (max-width: 768px) {
+    .cta-banner {
+        padding: 15px 10px;
+    }
+    
+    .cta-btn {
+        padding: 16px 40px;
+        font-size: 18px;
+        min-width: 220px;
+        letter-spacing: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .cta-banner {
+        padding: 12px 10px;
+    }
+    
+    .cta-btn {
+        padding: 14px 30px;
+        font-size: 15px;
+        min-width: 180px;
+        letter-spacing: 1.5px;
+        border-width: 2px;
+    }
+}
+/* ==========================================
+   OPCIÓN 1: TARJETA FLOTANTE
+   ========================================== */
+
+.promo-title-card.floating {
+    position: relative;
+    z-index: 10;
+    margin: 0 auto 30px auto;
+    max-width: 700px;
+    background: linear-gradient(135deg, #1b2a4a 0%, #2c3e6e 100%);
+    border-radius: 20px;
+    padding: 30px 40px;
+    text-align: center;
+    box-shadow: 0 15px 45px rgba(27, 42, 74, 0.25);
+    border: 2px solid rgba(195, 206, 148, 0.2);
+    transform: translateY(0);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.promo-title-card.floating:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 55px rgba(27, 42, 74, 0.35);
+}
+
+.promo-title-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.promo-title-icon {
+    font-size: 40px;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.promo-title-content h2 {
+    color: #ffffff;
+    font-size: 32px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin: 0;
+    text-shadow: 0 2px 15px rgba(0,0,0,0.2);
+}
+
+.promo-title-content p {
+    color: #e1d5c9;
+    font-size: 16px;
+    margin: 8px 0 0 0;
+    opacity: 0.9;
+    letter-spacing: 1px;
+}
+
+/* Línea decorativa */
+.promo-title-content::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #C3CE94, transparent);
+    margin: 10px auto 0 auto;
+    border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .promo-title-card.floating {
+        padding: 20px 25px;
+        margin: 0 15px 20px 15px;
+        max-width: 90%;
+    }
+    
+    .promo-title-content h2 {
+        font-size: 24px;
+    }
+    
+    .promo-title-icon {
+        font-size: 30px;
+    }
+    
+    .promo-title-content p {
+        font-size: 14px;
+    }
+}
+/* ==========================================
+   OPCIÓN 2: BANNER CON DEGRADADO
+   ========================================== */
+
+.promo-title-card.banner {
+    background: linear-gradient(135deg, #1b2a4a 0%, #0f1a2e 50%, #1b2a4a 100%);
+    padding: 25px 40px;
+    margin: 0 0 35px 0;
+    position: relative;
+    border-top: 3px solid #C3CE94;
+    border-bottom: 3px solid #C3CE94;
+    box-shadow: inset 0 0 60px rgba(195, 206, 148, 0.05);
+}
+
+/* Líneas decorativas laterales */
+.promo-title-card.banner::before,
+.promo-title-card.banner::after {
+    content: '';
+    position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background: none !important; /* Quita el fondo dorado heredado */
-    border: none !important;
-    color: #888 !important;
-    font-size: 18px;
-    width: auto !important;
-    padding: 5px !important;
-    cursor: pointer;
-    transition: color 0.2s ease;
+    width: 120px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #C3CE94);
 }
 
-.toggle-pass-btn:hover {
-    color: #d69e2e !important; /* Se pone dorado al pasar el mouse */
+.promo-title-card.banner::before {
+    left: 20px;
+}
+
+.promo-title-card.banner::after {
+    right: 20px;
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.promo-title-card.banner .promo-title-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.promo-title-card.banner .promo-title-icon {
+    font-size: 48px;
+    margin: 0;
+    background: rgba(195, 206, 148, 0.15);
+    padding: 15px;
+    border-radius: 50%;
+    border: 2px solid rgba(195, 206, 148, 0.2);
+}
+
+.promo-title-card.banner .promo-title-text {
+    text-align: left;
+}
+
+.promo-title-card.banner .promo-title-text h2 {
+    color: #ffffff;
+    font-size: 34px;
+    font-weight: 800;
+    letter-spacing: 3px;
+    margin: 0;
+    text-shadow: 0 2px 20px rgba(0,0,0,0.3);
+}
+
+.promo-title-card.banner .promo-title-text p {
+    color: #C3CE94;
+    font-size: 16px;
+    margin: 5px 0 0 0;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+/* Efecto hover */
+.promo-title-card.banner:hover {
+    border-top-color: #a8b87a;
+    border-bottom-color: #a8b87a;
+    transition: border-color 0.4s ease;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .promo-title-card.banner::before,
+    .promo-title-card.banner::after {
+        width: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-title-card.banner {
+        padding: 20px;
+        margin: 0 0 25px 0;
+    }
+    
+    .promo-title-card.banner::before,
+    .promo-title-card.banner::after {
+        display: none;
+    }
+    
+    .promo-title-card.banner .promo-title-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .promo-title-card.banner .promo-title-text {
+        text-align: center;
+    }
+    
+    .promo-title-card.banner .promo-title-text h2 {
+        font-size: 26px;
+    }
+    
+    .promo-title-card.banner .promo-title-icon {
+        font-size: 36px;
+        padding: 12px;
+    }
+}
+/* =========================================
+   ESTILOS PARA LAS CATEGORÍAS DEL SIDEBAR
+   ========================================= */
+
+/* 1. Cambiamos la fuente de todo el contenedor de categorías */
+#categoriesContainer {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* 2. Estilo base para cada bloque de categoría (asumiendo que son divs o botones) */
+#categoriesContainer > div {
+    background-color: rgba(255, 255, 255, 0.03); /* Un fondo oscuro muy sutil */
+    border: 1px solid rgba(255, 255, 255, 0.08); /* Borde tenue */
+    border-radius: 10px; /* Bordes redondeados modernos */
+    margin-bottom: 12px; /* Separación entre cada categoría */
+    padding: 15px; 
+    color: #ffffff;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Transición suave para las animaciones */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* 3. Efecto visual al pasar el cursor (Hover) */
+#categoriesContainer > div:hover {
+    background-color: rgba(104, 96, 211, 0.15); /* Usa el tono verde claro de tus botones */
+    border-color: #532ae9; /* Resalta el borde */
+    transform: translateX(8px); /* Desplaza el menú ligeramente hacia la derecha */
+}
+
+/* 4. Estilo específico para los textos principales (PUNTOS DE INTERÉS, HOTELES, etc.) */
+#categoriesContainer span, 
+#categoriesContainer h3,
+#categoriesContainer h4 {
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1.5px; /* Separa un poco las letras para más elegancia */
+    text-transform: uppercase;
+}
+
+/* 5. Si tienes botones de "VER EN MAPA" dentro de las categorías, estilizalos así: */
+#categoriesContainer button {
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #e1d5c9;
+    border-radius: 4px;
+    padding: 5px 10px;
+    font-size: 10px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#categoriesContainer button:hover {
+    background-color: #3a339e;
+    color: #1b2a4a;
+    border-color: #3b44c7;
+}
+.sidebar-right {
+    background-color: #ffffff;
+    box-shadow: -5px 0 15px rgba(0,0,0,0.05); /* Sombra suave hacia la izquierda */
+    border-left: none;
+}
+.itinerary-title {
+    color: #1b2a4a; /* Azul marino de tu marca */
+    border-bottom: 2px solid #C3CE94; /* Detalle verde oliva */
+}
+.search-wrapper input {
+    background: rgba(255, 255, 255, 0.1) !important; /* Translúcido elegante */
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    color: white !important;
+}
+.search-wrapper input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+/* Scrollbar personalizada para las barras laterales */
+.sidebar-left::-webkit-scrollbar,
+.sidebar-right::-webkit-scrollbar {
+    width: 6px;
+}
+.sidebar-left::-webkit-scrollbar-track,
+.sidebar-right::-webkit-scrollbar-track {
+    background: transparent;
+}
+.sidebar-left::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+.sidebar-left::-webkit-scrollbar-thumb:hover {
+    background: #C3CE94;
+}
+/* =========================================
+   BOTÓN SOLICITAR PRESUPUESTO (DINÁMICO)
+   ========================================= */
+
+/* Contenedor del botón para darle espacio */
+.itinerary-footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: auto; /* Empuja el botón al fondo si hay espacio */
+}
+
+/* Estilo principal del botón */
+.budget-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C3CE94; /* Verde oliva de tu marca */
+    color: #1b2a4a !important; /* Azul marino para el texto */
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    padding: 16px 20px;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    
+    /* Animación de pulso constante */
+    animation: pulso-premium 2s infinite;
+}
+
+/* Dinámica 1: Efecto al pasar el cursor (Hover) */
+.budget-btn:hover {
+    transform: translateY(-4px) scale(1.02); /* Se levanta y crece un poquito */
+    background-color: #d4e0a3; /* Un verde un poco más claro al iluminarse */
+    /* Detenemos el pulso y ponemos una sombra fija y elegante */
+    animation: none; 
+    box-shadow: 0 8px 25px rgba(195, 206, 148, 0.6);
+}
+
+/* Dinámica 2: Animación de "latido" (Pulse) */
+@keyframes pulso-premium {
+    0% {
+        box-shadow: 0 0 0 0 rgba(195, 206, 148, 0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(195, 206, 148, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(195, 206, 148, 0);
+    }
+}
+
+/* Ajuste para el ícono de la gráfica 📊 que tiene el botón */
+.budget-btn i, 
+.budget-btn span,
+.budget-btn {
+    gap: 8px; /* Separa un poco el emoji del texto */
 }
