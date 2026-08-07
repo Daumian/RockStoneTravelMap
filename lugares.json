@@ -1184,7 +1184,7 @@
             {
                 "nombre": "Quimera Bistro",
                 "latitud": "-33.1049507",
-                "longitud": "68.8977516",
+                "longitud": "-68.8977516",
                 "descripcion": {
                     "es": "Es el prestigioso restaurante de la Bodega Achaval-Ferrer (recomendado por la Guía Michelin) que ofrece un menú ejecutivo y de pasos enfocado en reinterpretar la cocina autóctona mediante ingredientes de su huerta orgánica.",
                     "en": "This is the prestigious restaurant of Bodega Achaval-Ferrer (recommended by the Michelin Guide), offering an executive tasting menu focused on reinterpreting native cuisine with ingredients from its own organic garden.",
@@ -2381,8 +2381,8 @@
             },
             {
                 "nombre": "Trapiche",
-                "latitud": "32.9727533",
-                "longitud": "-68.7459872",
+                "latitud": "-32.9739337",
+                "longitud": "-68.7489204",
                 "descripcion": {
                     "es": "Es una de las bodegas más imponentes y premiadas del país, que deslumbra con su arquitectura renacentista, su enfoque biodinámico y una gastronomía de alto nivel.",
                     "en": "This is one of the country's most impressive and award-winning wineries, dazzling visitors with its Renaissance-style architecture, its biodynamic approach and high-level cuisine.",
