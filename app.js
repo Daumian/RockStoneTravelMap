@@ -47,12 +47,12 @@ const ZONAS_AMPLIAS = new Set(['tour_alta_montana', 'lujan_de_cuyo_bodegas', 'ma
 // Dentro de la app Android empaquetada (Capacitor) los tiles viajan
 // adentro del .apk y se sirven localmente: no hace falta internet.
 // Fuera de la app (navegador normal, para probar en la compu) se piden
-// a CARTO Positron: un estilo minimalista (sin iconos de comercios,
-// menos texto) para que los pines propios no compitan con el mapa base.
+// a CARTO Voyager: minimalista igual que Positron (sin iconos de
+// comercios ni cartel suelto) pero con verdes/colores, no todo blanco.
 const esAppNativa = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
 const tileUrl = esAppNativa
     ? 'tiles/{z}/{x}/{y}.png'
-    : 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+    : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png';
 
 L.tileLayer(tileUrl, {
     maxZoom: 19,
