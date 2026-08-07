@@ -39,7 +39,7 @@ function translateStaticUI() {
         }
     });
 }
-const map = L.map('map').setView([-32.8895, -68.845], 11);
+const map = L.map('map').setView([-32.8895, -68.845], 13);
 let currentLang = 'es';
 let markerMap = new Map();
 let selectedPlaces = new Set(); 
@@ -267,9 +267,9 @@ function buildInterface() {
 
         const list = document.createElement('ul');
         list.className = 'places-list';
-        // Descomenta la siguiente línea si quieres que las listas arranquen CERRADAS por defecto:
-        list.classList.add('collapsed'); title.querySelector('.accordion-icon').innerText = '▶';
-        
+        list.classList.add('collapsed');    
+        title.querySelector('.accordion-icon').innerText = '▶';
+
         lugaresFiltrados.forEach(lugar => {
             const item = document.createElement('li');
             item.className = 'place-item';
