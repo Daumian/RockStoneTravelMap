@@ -1,0 +1,19 @@
+{
+  "name": "rockstone-travels-app",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Rock Stone Travels - mapa interactivo de Mendoza, empaquetado como app Android offline con Capacitor",
+  "scripts": {
+    "build:www": "node scripts/build-www.js",
+    "download:tiles": "node scripts/download-tiles.js",
+    "cap:sync": "npm run build:www && npx cap sync android"
+  },
+  "dependencies": {
+    "@capacitor/android": "^6.2.0",
+    "@capacitor/core": "^6.2.0"
+  },
+  "devDependencies": {
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^6.2.0"
+  }
+}

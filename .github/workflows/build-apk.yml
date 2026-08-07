@@ -1,0 +1,54 @@
+name: Build APK offline (Android)
+
+# Se dispara a mano desde la pestaña "Actions" de GitHub (botón "Run workflow").
+# No corre solo en cada push: bajar ~77.000 tiles del mapa no es algo para
+# repetir en cada commit, así que queda a demanda.
+on:
+  workflow_dispatch: {}
+
+jobs:
+  build-apk:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout del repo
+        uses: actions/checkout@v4
+
+      - name: Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Java (para Gradle/Android)
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 21
+
+      # Cachea los tiles del mapa entre builds. Si no cambiaron las zonas/zoom
+      # en scripts/download-tiles.js, este paso evita volver a pedirle
+      # ~77.000 tiles al servidor gratuito de OpenStreetMap France.
+      - name: Cache de tiles del mapa
+        uses: actions/cache@v4
+        with:
+          path: tiles
+          key: mapa-tiles-${{ hashFiles('scripts/download-tiles.js') }}
+
+      - name: Instalar dependencias
+        run: npm ci
+
+      - name: Descargar tiles del mapa (usa cache si ya están)
+        run: npm run download:tiles
+
+      - name: Armar www/ y sincronizar proyecto Android
+        run: npm run cap:sync
+
+      - name: Compilar APK
+        working-directory: android
+        run: ./gradlew assembleDebug --no-daemon
+
+      - name: Subir APK como artifact descargable
+        uses: actions/upload-artifact@v4
+        with:
+          name: RockStoneTravels-app
+          path: android/app/build/outputs/apk/debug/app-debug.apk
+          retention-days: 90

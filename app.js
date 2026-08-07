@@ -40,8 +40,20 @@ let selectedPlaces = new Set();
 let activeCategoryFilter = null; // Null significa "mostrar todo"
 let geoData = { categorias: {}, lugares: [] };
 
-L.tileLayer('https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png', {
+// Dentro de la app Android empaquetada (Capacitor) los tiles viajan
+// adentro del .apk y se sirven localmente: no hace falta internet.
+// Fuera de la app (navegador normal, para probar en la compu) se piden
+// al servidor de OpenStreetMap France como antes.
+const esAppNativa = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
+const tileUrl = esAppNativa
+    ? 'tiles/{z}/{x}/{y}.png'
+    : 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png';
+
+L.tileLayer(tileUrl, {
     maxZoom: 19,
+    // Adentro de la app no hay tiles más allá del zoom 16: en vez de pedir
+    // tiles inexistentes, Leaflet agranda el último tile descargado.
+    maxNativeZoom: esAppNativa ? 16 : 19,
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
 }).addTo(map);
 
