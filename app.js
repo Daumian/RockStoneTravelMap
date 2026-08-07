@@ -5,12 +5,6 @@ const uiLabels = {
 };
 // 1. DICCIONARIO DE LA PÁGINA (Puedes agregar aquí todas las frases que necesites)
 const pageTranslations = {
-    // Textos del Login
-    "login_desc": { es: "Ingresa tu código de acceso exclusivo:", en: "Enter your exclusive access code:", pt: "Insira seu código de acesso exclusivo:" },
-    "login_btn": { es: "Ingresar", en: "Enter", pt: "Entrar" },
-    "login_error": { es: "Código incorrecto. Inténtalo de nuevo.", en: "Incorrect code. Please try again.", pt: "Código incorreto. Tente novamente." },
-    "login_placeholder": { es: "Código de acceso...", en: "Access code...", pt: "Código de acesso..." },
-    
     // Textos repetidos del Carrusel
     "card_desde": { es: "Desde", en: "From", pt: "A partir de" },
     "card_personas": { es: "por 2 personas", en: "for 2 people", pt: "para 2 pessoas" },
@@ -155,10 +149,10 @@ function loadData() {
                             categoria: cat,
                             coordenadas: [lat, lng],
                             nombre: { es: lugar.nombre, en: lugar.nombre, pt: lugar.nombre },
-                            resena: { 
-                                es: lugar.descripcion || "Sin descripción disponible.", 
-                                en: lugar.descripcion || "No description available.", 
-                                pt: lugar.descripcion || "Sem descrição disponível." 
+                            resena: {
+                                es: lugar.descripcion?.es || "Sin descripción disponible.",
+                                en: lugar.descripcion?.en || "No description available.",
+                                pt: lugar.descripcion?.pt || "Sem descrição disponível."
                             },
                             fotos: rutasFotos // ASIGNAMOS EL ARREGLO CON LAS RUTAS
                         });
@@ -175,57 +169,6 @@ function loadData() {
             document.getElementById('categoriesContainer').innerHTML = `<p style="padding: 20px; color: #e53e3e; font-weight: bold;">Error al cargar datos. ¿Estás usando un servidor local?</p>`;
         });
 }
-
-function validateLogin() {
-    const input = document.getElementById('passInput');
-    const overlay = document.getElementById('login-overlay');
-    const box = document.getElementById('loginBox');
-    const error = document.getElementById('errorMsg');
-    
-    // Validamos pasando todo a minúsculas
-    if (input.value.toLowerCase().trim() === 'rockstonemdz'.toLowerCase()) {
-        // Login correcto: ocultamos el overlay
-        overlay.classList.add('hidden');
-    } else {
-        // Login incorrecto: mostramos error y sacudimos la caja
-        error.style.display = 'block';
-        box.classList.add('shake');
-        
-        // Limpiamos el input para que vuelva a intentar
-        input.value = '';
-        input.focus();
-        
-        // Removemos la clase shake después de que termine la animación para poder repetirla
-        // Agregalo al final de buildInterface() o en un setTimeout
-        setTimeout(() => {
-            map.invalidateSize();
-        }, 400);
-    }
-}
-
-function togglePasswordVisibility() {
-    const input = document.getElementById('passInput');
-    const btn = document.getElementById('togglePassBtn');
-    
-    if (input.type === 'password') {
-        input.type = 'text';
-        btn.innerText = '🙈'; // Cambia el ícono para indicar que se puede ocultar
-    } else {
-        input.type = 'password';
-        btn.innerText = '👁️'; // Cambia el ícono para indicar que se puede ver
-    }
-    
-    // Devolvemos el foco al input para que el usuario pueda seguir escribiendo de una
-    input.focus();
-}
-
-
-function checkEnter(event) {
-    if (event.key === 'Enter') {
-        validateLogin();
-    }
-}
-
 
 function buildInterface() {
     document.getElementById('itineraryTitle').innerText = uiLabels.itineraryTitle[currentLang];
@@ -424,10 +367,6 @@ loadData();
 
 const uiTranslations = {
     es: {
-        loginDesc: "Ingresa tu código de acceso exclusivo:",
-        loginBtn: "Ingresar",
-        loginPlaceholder: "Código de acceso...",
-        loginError: "Código incorrecto. Inténtalo de nuevo.",
         cardDesde: "Desde",
         cardPersonas: "por 2 personas",
         cardTraslados: "🚗 Incluye traslados",
@@ -435,10 +374,6 @@ const uiTranslations = {
         startBtnBanner: "Explorar Mapa"
     },
     en: {
-        loginDesc: "Enter your exclusive access code:",
-        loginBtn: "Enter",
-        loginPlaceholder: "Access code...",
-        loginError: "Incorrect code. Please try again.",
         cardDesde: "From",
         cardPersonas: "for 2 people",
         cardTraslados: "🚗 Includes transfers",
@@ -446,10 +381,6 @@ const uiTranslations = {
         startBtnBanner: " Explore Map"
     },
     pt: {
-        loginDesc: "Insira seu código de acesso exclusivo:",
-        loginBtn: "Entrar",
-        loginPlaceholder: "Código de acesso...",
-        loginError: "Código incorreto. Tente novamente.",
         cardDesde: "A partir de",
         cardPersonas: "para 2 pessoas",
         cardTraslados: "🚗 Inclui traslados",
@@ -460,22 +391,8 @@ const uiTranslations = {
 
 function translateFullPage() {
     const texts = uiTranslations[currentLang];
-    
-    // 1. Traducir el Login
-    const loginDesc = document.querySelector('#loginBox p');
-    if (loginDesc) loginDesc.innerText = texts.loginDesc;
-    
-    // El botón de ingresar es el primer botón dentro de loginBox que no tiene ID
-    const loginBtn = document.querySelector('#loginBox button:not(#togglePassBtn)');
-    if (loginBtn) loginBtn.innerText = texts.loginBtn;
-    
-    const passInput = document.getElementById('passInput');
-    if (passInput) passInput.placeholder = texts.loginPlaceholder;
-    
-    const errorMsg = document.getElementById('errorMsg');
-    if (errorMsg) errorMsg.innerText = texts.loginError;
 
-    // 2. Traducir el botón central de Explorar Mapa
+    // 1. Traducir el botón central de Explorar Mapa
     const startBtn = document.getElementById('startBtn');
     if (startBtn) startBtn.innerText = texts.startBtnBanner;
     
