@@ -20,27 +20,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 <body>
 
-   <div id="login-overlay" class="login-overlay">
-        <div class="login-box" id="loginBox">
-            <h2>Rock <span>Stone</span> Travels</h2>
-            
-            <!-- AQUÍ AGREGA: data-i18n="login_desc" -->
-            <p data-i18n="login_desc">Ingresa tu código de acceso exclusivo:</p>
-            
-            <div class="password-wrapper">
-                <!-- AQUÍ AGREGA: data-i18n-placeholder="login_placeholder" -->
-                <input type="password" id="passInput" data-i18n-placeholder="login_placeholder" placeholder="Código de acceso..." onkeydown="checkEnter(event)">
-                <button type="button" id="togglePassBtn" class="toggle-pass-btn" onclick="togglePasswordVisibility()">👁️</button>
-            </div>
-            
-            <!-- AQUÍ AGREGA: data-i18n="login_btn" -->
-            <button onclick="validateLogin()" data-i18n="login_btn">Ingresar</button>
-            
-            <!-- AQUÍ AGREGA: data-i18n="login_error" -->
-            <div id="errorMsg" class="error-msg" data-i18n="login_error">Código incorrecto. Inténtalo de nuevo.</div>
-        </div>
-    </div>
-
     <!-- PORTADA PRINCIPAL (SIN BOTÓN) -->
     <section class="hero-section">
         <!-- Solo la imagen de fondo, sin botón -->
