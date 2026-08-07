@@ -12,7 +12,7 @@ body, html { height: 100%; scroll-behavior: smooth; background-color: #e1d5c9; c
 .hero-section {
     height: 60vh;
     /* 1. Quitamos el "linear-gradient" para eliminar la capa oscura */
-    background: url('img/ux/IMG-20260704-WA0037.jpg') no-repeat center center/cover;
+    background: url('img/ux/fondo.jpg') no-repeat center center/cover;
     display: flex;
     flex-direction: column;
     /* 2. Cambiamos 'center' por 'flex-end' para mandar el botón hacia abajo */

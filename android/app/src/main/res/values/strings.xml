@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">RockStone Travels</string>
+    <string name="title_activity_main">RockStone Travels</string>
+    <string name="package_name">com.rockstonetravels.app</string>
+    <string name="custom_url_scheme">com.rockstonetravels.app</string>
+</resources>

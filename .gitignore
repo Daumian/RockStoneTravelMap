@@ -1,0 +1,10 @@
+# Dependencias de Node / Capacitor
+node_modules/
+
+# Generado por scripts/build-www.js — se reconstruye siempre antes de compilar
+www/
+
+# Tiles del mapa descargados por scripts/download-tiles.js (pesa GB, nunca a git)
+tiles/
+
+npm-debug.log*
