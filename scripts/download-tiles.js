@@ -1,8 +1,8 @@
-// Descarga UNA VEZ los tiles del mapa (estilo CARTO Positron: minimalista,
-// sin iconos de comercios, para que los pines propios resalten) y los deja
-// en tiles/{z}/{x}/{y}.png para que build-www.js los empaquete dentro de la
-// app. Pensado para correr en el runner de GitHub Actions (ver
-// .github/workflows/build-apk.yml), no en las tablets.
+// Descarga UNA VEZ los tiles del mapa (estilo CARTO Voyager: minimalista,
+// sin iconos de comercios, pero con colores/verdes en vez de todo blanco)
+// y los deja en tiles/{z}/{x}/{y}.png para que build-www.js los empaquete
+// dentro de la app. Pensado para correr en el runner de GitHub Actions
+// (ver .github/workflows/build-apk.yml), no en las tablets.
 //
 // Dos niveles de detalle:
 //  - Toda la provincia de Mendoza, zoom 6-15 (navegación y ubicación general).
@@ -17,7 +17,7 @@ const path = require('path');
 const https = require('https');
 
 const TILES_DIR = path.join(__dirname, '..', 'tiles');
-const TILE_SERVER = 'https://a.basemaps.cartocdn.com/light_all';
+const TILE_SERVER = 'https://a.basemaps.cartocdn.com/rastertiles/voyager';
 const USER_AGENT = 'RockStoneTravelMapApp/1.0 (offline map build; contacto: daumianruiz@gmail.com)';
 const CONCURRENCY = 8; // conexiones simultáneas: moderado a propósito, es un servidor gratuito comunitario
 

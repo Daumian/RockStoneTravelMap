@@ -33,22 +33,26 @@ function translateStaticUI() {
         }
     });
 }
-const map = L.map('map').setView([-32.8895, -68.845], 13);
+const map = L.map('map').setView([-32.8895, -68.845], 14);
 let currentLang = 'es';
 let markerMap = new Map();
 let selectedPlaces = new Set(); 
 let activeCategoryFilter = null; // Null significa "mostrar todo"
 let geoData = { categorias: {}, lugares: [] };
 
+// Categorías cuyos lugares están lejos del centro (hay que mover el mapa
+// para verlos). Las demás categorías ya están todas cerca, no hace falta.
+const ZONAS_AMPLIAS = new Set(['tour_alta_montana', 'lujan_de_cuyo_bodegas', 'maipu_bodegas', 'valle_de_uco__(bodegas)']);
+
 // Dentro de la app Android empaquetada (Capacitor) los tiles viajan
 // adentro del .apk y se sirven localmente: no hace falta internet.
 // Fuera de la app (navegador normal, para probar en la compu) se piden
-// a CARTO Positron: un estilo minimalista (sin iconos de comercios,
-// menos texto) para que los pines propios no compitan con el mapa base.
+// a CARTO Voyager: minimalista igual que Positron (sin iconos de
+// comercios ni cartel suelto) pero con verdes/colores, no todo blanco.
 const esAppNativa = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
 const tileUrl = esAppNativa
     ? 'tiles/{z}/{x}/{y}.png'
-    : 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+    : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png';
 
 L.tileLayer(tileUrl, {
     maxZoom: 19,
@@ -81,10 +85,10 @@ function getIconByCategoria(cat) {
     // Creamos el nuevo pin circular con CSS
     return L.divIcon({
         className: 'custom-premium-pin',
-        html: `<div style="background-color: ${color}; width: 28px; height: 28px; border-radius: 50%; border: 4px solid white; box-shadow: 0 3px 6px rgba(0,0,0,0.4); transition: transform 0.2s;"></div>`,
-        iconSize: [28, 28],
-        iconAnchor: [14, 14], // Centra el círculo exacto en la coordenada
-        popupAnchor: [0, -16] // Abre el cartelito justo arriba del círculo
+        html: `<div style="background-color: ${color}; width: 38px; height: 38px; border-radius: 50%; border: 5px solid white; box-shadow: 0 3px 6px rgba(0,0,0,0.4); transition: transform 0.2s;"></div>`,
+        iconSize: [38, 38],
+        iconAnchor: [19, 19], // Centra el círculo exacto en la coordenada
+        popupAnchor: [0, -20] // Abre el cartelito justo arriba del círculo
     });
 }
 
@@ -294,6 +298,11 @@ function buildInterface() {
 
             // Llamo a la función que esconde/muestra en el mapa
             updateMapMarkers();
+
+            // Si es una zona lejos del centro, además muevo el mapa hasta ahí
+            if (activeCategoryFilter === key && ZONAS_AMPLIAS.has(key) && lugaresFiltrados.length > 0) {
+                map.fitBounds(lugaresFiltrados.map(l => l.coordenadas), { padding: [40, 40], maxZoom: 14 });
+            }
         };
 
         updateMapMarkers();
