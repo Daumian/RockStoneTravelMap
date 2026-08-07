@@ -81,10 +81,10 @@ function getIconByCategoria(cat) {
     // Creamos el nuevo pin circular con CSS
     return L.divIcon({
         className: 'custom-premium-pin',
-        html: `<div style="background-color: ${color}; width: 16px; height: 16px; border-radius: 50%; border: 2.5px solid white; box-shadow: 0 3px 6px rgba(0,0,0,0.4); transition: transform 0.2s;"></div>`,
-        iconSize: [16, 16], 
-        iconAnchor: [8, 8], // Centra el círculo exacto en la coordenada
-        popupAnchor: [0, -10] // Abre el cartelito justo arriba del círculo
+        html: `<div style="background-color: ${color}; width: 28px; height: 28px; border-radius: 50%; border: 4px solid white; box-shadow: 0 3px 6px rgba(0,0,0,0.4); transition: transform 0.2s;"></div>`,
+        iconSize: [28, 28],
+        iconAnchor: [14, 14], // Centra el círculo exacto en la coordenada
+        popupAnchor: [0, -16] // Abre el cartelito justo arriba del círculo
     });
 }
 
