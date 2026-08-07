@@ -43,18 +43,20 @@ let geoData = { categorias: {}, lugares: [] };
 // Dentro de la app Android empaquetada (Capacitor) los tiles viajan
 // adentro del .apk y se sirven localmente: no hace falta internet.
 // Fuera de la app (navegador normal, para probar en la compu) se piden
-// al servidor de OpenStreetMap France como antes.
+// a CARTO Positron: un estilo minimalista (sin iconos de comercios,
+// menos texto) para que los pines propios no compitan con el mapa base.
 const esAppNativa = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
 const tileUrl = esAppNativa
     ? 'tiles/{z}/{x}/{y}.png'
-    : 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png';
+    : 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
 
 L.tileLayer(tileUrl, {
     maxZoom: 19,
+    subdomains: 'abcd',
     // Adentro de la app no hay tiles más allá del zoom 16: en vez de pedir
     // tiles inexistentes, Leaflet agranda el último tile descargado.
     maxNativeZoom: esAppNativa ? 16 : 19,
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors, Tiles style by <a href="https://www.hotosm.org/" target="_blank">Humanitarian OpenStreetMap Team</a> hosted by <a href="https://openstreetmap.fr/" target="_blank">OpenStreetMap France</a>'
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank">CARTO</a>'
 }).addTo(map);
 
 function getIconByCategoria(cat) {
@@ -79,10 +81,10 @@ function getIconByCategoria(cat) {
     // Creamos el nuevo pin circular con CSS
     return L.divIcon({
         className: 'custom-premium-pin',
-        html: `<div style="background-color: ${color}; width: 16px; height: 16px; border-radius: 50%; border: 2.5px solid white; box-shadow: 0 3px 6px rgba(0,0,0,0.4); transition: transform 0.2s;"></div>`,
-        iconSize: [16, 16], 
-        iconAnchor: [8, 8], // Centra el círculo exacto en la coordenada
-        popupAnchor: [0, -10] // Abre el cartelito justo arriba del círculo
+        html: `<div style="background-color: ${color}; width: 28px; height: 28px; border-radius: 50%; border: 4px solid white; box-shadow: 0 3px 6px rgba(0,0,0,0.4); transition: transform 0.2s;"></div>`,
+        iconSize: [28, 28],
+        iconAnchor: [14, 14], // Centra el círculo exacto en la coordenada
+        popupAnchor: [0, -16] // Abre el cartelito justo arriba del círculo
     });
 }
 
