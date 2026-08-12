@@ -22,7 +22,11 @@ const USER_AGENT = 'RockStoneTravelMapApp/1.0 (offline map build; contacto: daum
 const CONCURRENCY = 8; // conexiones simultáneas: moderado a propósito, es un servidor gratuito comunitario
 
 // Provincia completa: navegación general entre zonas.
-const ZONA_PROVINCIA = { latMin: -34.6, latMax: -32.6, lngMin: -70.0, lngMax: -67.5, zMin: 6, zMax: 15 };
+// zMax en 14 (no 15): un .apk es en el fondo un ZIP, y el formato ZIP
+// clásico tiene un límite duro de 65.535 archivos adentro. Con zMax 15
+// más las zonas de detalle nos pasábamos (~77.000). Con 14 quedan
+// ~26.600 tiles en total, con margen de sobra para las fotos y el código.
+const ZONA_PROVINCIA = { latMin: -34.6, latMax: -32.6, lngMin: -70.0, lngMax: -67.5, zMin: 6, zMax: 14 };
 
 // Zonas con concentración real de lugares cargados: detalle de calle.
 const ZONAS_DETALLE = [
