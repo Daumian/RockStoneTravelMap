@@ -314,6 +314,7 @@
         
         <aside class="sidebar-left">
             <div class="sidebar-header">
+                <h2 class="sidebar-title">📍 Lugares</h2>
                 <div class="lang-picker">
                     <select id="langSelect" onchange="changeLanguage()">
                         <option value="es">Español</option>
@@ -332,12 +333,17 @@
 
         <main id="map"></main>
 
-        <aside class="sidebar-right">
-            <div class="itinerary-title" id="itineraryTitle">📋 Cosas por hacer</div>
+        <button id="itineraryToggleBtn" class="itinerary-toggle-btn" onclick="toggleItinerary()">📋</button>
+
+        <aside class="sidebar-right" id="sidebarRight">
+            <div class="itinerary-header-row">
+                <div class="itinerary-title" id="itineraryTitle">📋 Cosas por hacer</div>
+                <button class="itinerary-close-btn" onclick="toggleItinerary()">✕</button>
+            </div>
             <ul class="itinerary-list" id="itineraryList"></ul>
-            
+
             <div class="itinerary-footer">
-                <a href="https://wa.me/5492612345678?text=Hola%20Rock%20Stone%20Travels!%20Quiero%20solicitar%20un%20presupuesto%20personalizado%20para%20mi%20viaje%20a%20Mendoza%20%E2%9C%88%EF%B8%8F" 
+                <a href="https://wa.me/5492612345678?text=Hola%20Rock%20Stone%20Travels!%20Quiero%20solicitar%20un%20presupuesto%20personalizado%20para%20mi%20viaje%20a%20Mendoza%20%E2%9C%88%EF%B8%8F"
                    target="_blank" class="budget-btn">
                      Solicitar Presupuesto
                 </a>

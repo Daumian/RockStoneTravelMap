@@ -110,16 +110,20 @@ function updateMapMarkers() {
 
 window.activarModoMapa = function(event) {
     // 1. Evita el salto brusco del link
-    event.preventDefault(); 
+    event.preventDefault();
 
     // 2. Hace el deslizamiento suave hacia el mapa
     document.getElementById('map-experience').scrollIntoView({ behavior: 'smooth' });
 
-    // 3. Simplemente actualizamos el mapa para que no salgan zonas grises, 
+    // 3. Simplemente actualizamos el mapa para que no salgan zonas grises,
     // PERO sin ocultar nada ni bloquear el scroll.
     setTimeout(() => {
         map.invalidateSize();
     }, 600);
+};
+
+window.toggleItinerary = function() {
+    document.getElementById('sidebarRight').classList.toggle('open');
 };
 
 function loadData() {
