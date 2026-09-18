@@ -33,7 +33,7 @@ function translateStaticUI() {
         }
     });
 }
-const map = L.map('map').setView([-32.8895, -68.845], 14);
+const map = L.map('map').setView([-32.8895, -68.845], 16);
 let currentLang = 'es';
 let markerMap = new Map();
 let selectedPlaces = new Set(); 
@@ -85,10 +85,10 @@ function getIconByCategoria(cat) {
     // Creamos el nuevo pin circular con CSS
     return L.divIcon({
         className: 'custom-premium-pin',
-        html: `<div style="background-color: ${color}; width: 38px; height: 38px; border-radius: 50%; border: 5px solid white; box-shadow: 0 3px 6px rgba(0,0,0,0.4); transition: transform 0.2s;"></div>`,
-        iconSize: [38, 38],
-        iconAnchor: [19, 19], // Centra el círculo exacto en la coordenada
-        popupAnchor: [0, -20] // Abre el cartelito justo arriba del círculo
+        html: `<div style="background-color: ${color}; width: 28px; height: 28px; border-radius: 50%; border: 4px solid white; box-shadow: 0 3px 6px rgba(0,0,0,0.4); transition: transform 0.2s;"></div>`,
+        iconSize: [28, 28],
+        iconAnchor: [14, 14], // Centra el círculo exacto en la coordenada
+        popupAnchor: [0, -16] // Abre el cartelito justo arriba del círculo
     });
 }
 
@@ -316,10 +316,29 @@ function buildInterface() {
     filterPlaces(); // Añadido para que mantenga el filtro al cambiar de idioma
 }
 
+function showToast(mensaje) {
+    let toast = document.getElementById('toast-notif');
+    if (!toast) {
+        toast = document.createElement('div');
+        toast.id = 'toast-notif';
+        toast.className = 'toast-notif';
+        document.body.appendChild(toast);
+    }
+    toast.innerText = mensaje;
+    toast.classList.add('show');
+    clearTimeout(toast._timeoutId);
+    toast._timeoutId = setTimeout(() => {
+        toast.classList.remove('show');
+    }, 500);
+}
+
 window.addToItinerary = function(id) {
     selectedPlaces.add(id);
     updateItineraryUI();
-    map.closePopup(); 
+    map.closePopup();
+
+    const lugarData = geoData.lugares.find(l => l.id === id);
+    if (lugarData) showToast(`✓ ${lugarData.nombre[currentLang]} añadido`);
 };
 
 window.removeFromItinerary = function(id) {
