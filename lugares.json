@@ -2198,18 +2198,6 @@
                 "imagenB": "finca_la_anita_B.jpg"
             },
             {
-                "nombre": "Sottano",
-                "latitud": "44.4121656",
-                "longitud": "7.4856444",
-                "descripcion": {
-                    "es": "Es una bodega muy pintoresca a los pies de la montaña, recomendada por sus exquisitos Malbec y Cabernet Franc, además de sus completas y entretenidas visitas guiadas.",
-                    "en": "This very picturesque winery at the foot of the mountains is recommended for its exquisite Malbec and Cabernet Franc, as well as its thorough and entertaining guided tours.",
-                    "pt": "É uma vinícola muito pitoresca aos pés da montanha, recomendada por seus requintados Malbec e Cabernet Franc, além de suas completas e divertidas visitas guiadas."
-                },
-                "imagenA": "sottano_A.jpg",
-                "imagenB": "sottano_B.jpg"
-            },
-            {
                 "nombre": "Viña Cobos",
                 "latitud": "-33.0953799",
                 "longitud": "-68.9263618",
