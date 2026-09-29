@@ -49,10 +49,12 @@ const ZONAS_AMPLIAS = new Set(['tour_alta_montana', 'lujan_de_cuyo_bodegas', 'ma
 // Fuera de la app (navegador normal, para probar en la compu) se piden
 // a CARTO Voyager: minimalista igual que Positron (sin iconos de
 // comercios ni cartel suelto) pero con verdes/colores, no todo blanco.
+// CARTO exige una API key gratuita desde sept. 2026 (antes no hacía falta).
+const CARTO_API_KEY = 'cb1_43y2_1_7f9acb9c6e1cfb179f6fbd03';
 const esAppNativa = !!(window.Capacitor && window.Capacitor.isNativePlatform && window.Capacitor.isNativePlatform());
 const tileUrl = esAppNativa
     ? 'tiles/{z}/{x}/{y}.png'
-    : 'https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png';
+    : `https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}.png?key=${CARTO_API_KEY}`;
 
 L.tileLayer(tileUrl, {
     maxZoom: 19,
