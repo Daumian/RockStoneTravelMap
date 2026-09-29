@@ -37,6 +37,8 @@ jobs:
         run: npm ci
 
       - name: Descargar tiles del mapa (usa cache si ya están)
+        env:
+          CARTO_API_KEY: ${{ secrets.CARTO_API_KEY }}
         run: npm run download:tiles
 
       - name: Armar www/ y sincronizar proyecto Android

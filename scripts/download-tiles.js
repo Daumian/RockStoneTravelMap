@@ -21,6 +21,15 @@ const TILE_SERVER = 'https://a.basemaps.cartocdn.com/rastertiles/voyager';
 const USER_AGENT = 'RockStoneTravelMapApp/1.0 (offline map build; contacto: daumianruiz@gmail.com)';
 const CONCURRENCY = 8; // conexiones simultáneas: moderado a propósito, es un servidor gratuito comunitario
 
+// CARTO exige API key gratuita desde sept. 2026. Sin ella, el servidor
+// responde 200 OK igual, pero la imagen es un cartel de "API KEY REQUIRED"
+// en vez del tile real — por eso frenamos acá en vez de descargar basura.
+const CARTO_API_KEY = process.env.CARTO_API_KEY;
+if (!CARTO_API_KEY) {
+    console.error('Falta la variable de entorno CARTO_API_KEY. Conseguí una gratis en https://carto.com/basemaps/apikey/');
+    process.exit(1);
+}
+
 // Provincia completa: navegación general entre zonas.
 // zMax en 14 (no 15): un .apk es en el fondo un ZIP, y el formato ZIP
 // clásico tiene un límite duro de 65.535 archivos adentro. Con zMax 15
@@ -68,7 +77,7 @@ function descargarTile(z, x, y) {
             return;
         }
 
-        const url = `${TILE_SERVER}/${z}/${x}/${y}.png`;
+        const url = `${TILE_SERVER}/${z}/${x}/${y}.png?key=${CARTO_API_KEY}`;
         https
             .get(url, { headers: { 'User-Agent': USER_AGENT } }, (res) => {
                 if (res.statusCode !== 200) {
